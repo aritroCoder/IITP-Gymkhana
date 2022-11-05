@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <section id="photostack-1" class="photostack photostack-start">
+      <div>
+        <figure>
+          <a href="http://goo.gl/Qw3ND4" class="photostack-img"
+            ><img src="img/1.jpg" alt="img01"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Serenity Beach</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="http://goo.gl/fhwlSP" class="photostack-img"
+            ><img src="img/2.jpg" alt="img02"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Happy Days</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="http://goo.gl/Jmvr4u" class="photostack-img"
+            ><img src="img/3.jpg" alt="img03"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Beautywood</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="http://goo.gl/49lN3k" class="photostack-img"
+            ><img src="img/4.jpg" alt="img04"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Heaven of time</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="http://goo.gl/NJ1Dhf" class="photostack-img"
+            ><img src="img/5.jpg" alt="img05"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Speed Racer</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="http://goo.gl/Ms7VDl" class="photostack-img"
+            ><img src="img/6.jpg" alt="img06"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Forever this</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/7.jpg" alt="img07"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Lovely Green</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/8.jpg" alt="img08"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Wonderful</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/9.jpg" alt="img09"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Love Addict</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/10.jpg" alt="img10"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Friendship</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/11.jpg" alt="img11"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">White Nights</h2>
+          </figcaption>
+        </figure>
+        <figure data-dummy>
+          <a href="#" class="photostack-img"
+            ><img src="img/12.jpg" alt="img12"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Serendipity</h2>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/photostack.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          new Photostack(document.getElementById("photostack-1"), {
+            callback: function (item) {
+              //console.log(item)
+            }
+          });
+        }, 5000);
+      });
+      // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+      /*new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );*/
+    </script>
+  </body>
+</html>
