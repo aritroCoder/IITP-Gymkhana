@@ -666,6 +666,8 @@ ol {
 	color: #fff;
 	font-size: 80px;
 	line-height: 80px;
+	-webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .owl-item.active .slide-content {
