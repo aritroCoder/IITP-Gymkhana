@@ -48,11 +48,6 @@
 	position: absolute;
 	display: block;
 	margin: 0;
-	border-radius: 50px;
-}
-
-.js .photostack figure img {
-	border-radius: 50px;
 }
 
 .photostack figcaption h2 {
