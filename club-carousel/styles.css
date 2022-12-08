@@ -99,3 +99,26 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   0% { transform: rotateY( 45deg ); }
   100% { transform: rotateY( 0deg ) translate3d( 150px,0,0 ) scale3d(1.2,1.2,1.2); }
 }*/
+
+@media only screen and (max-width: 730px) {
+  .coverflow-list {
+    width: 200%;
+  }
+  .club_text{
+    color: white;
+    /* top: 76%; */
+    position: relative;
+    float: left;
+    writing-mode: vertical-lr;
+    margin-right: 73px;
+    margin-top: 26px;
+  }
+  .controls{
+    display: none;
+  }
+}
+@media only screen and (max-width: 730px) and (min-width: 500px) {
+  .coverflow-list {
+    width: 161%;
+  }
+}
