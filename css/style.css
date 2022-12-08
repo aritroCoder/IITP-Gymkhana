@@ -1767,17 +1767,19 @@ ol {
 .portfolio-warp .grid-sizer {
   width: 20%;
 }
-
+.our-clubs_carousel {
+  background-color: #212121;
+  align-items: center;
+  justify-content: center;
+}
 .know-more {
-  color: black;
+  color: #fff;
   display: inline-block;
   position: relative;
   left: 44vw;
-  bottom: 0.5vh;
-  align-items: center;
-  justify-content: center;
+  bottom: 8vh;
   font-weight: 400;
-  border: 2px solid;
+  border: 2px solid white;
   border-radius: 15px;
   min-width: 200px;
   text-align: center;
@@ -1787,8 +1789,9 @@ ol {
   transition: 0.3s;
 }
 .know-more:hover {
-  background-color: black;
-  color: #fff;
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
 }
 /* ===========================
   Responsive
