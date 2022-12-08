@@ -6,10 +6,10 @@ $(".prev1").on("click", { d: "p" }, rotate);
 
 function rotate(e){
   if(e.data.d=="n"){
-    currdeg = currdeg - 90;
+    currdeg = currdeg - 60;
   }
   if(e.data.d=="p"){
-    currdeg = currdeg + 90;
+    currdeg = currdeg + 60;
   }
   carousel.css({
     "-webkit-transform": "rotateY("+currdeg+"deg)",
