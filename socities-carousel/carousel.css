@@ -4,13 +4,10 @@
     width: 250px;
     height: 200px;
     position: relative;
-    perspective: 1000px;
+    perspective: 2000px;
   }
 
   .carousel1 {
-    height: 100%;
-    width: 100%;
-    /* position: absolute; */
     transform-style: preserve-3d;
     transition: transform 1s;
 }
@@ -89,8 +86,6 @@
 
 
 @media (max-width:768px) {
-    .container1 {}
-
     .item {
         display: block;
         position: absolute;
