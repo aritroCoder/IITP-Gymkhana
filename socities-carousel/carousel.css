@@ -1,0 +1,158 @@
+
+.container1 {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 2000px;
+  }
+
+  .carousel1 {
+    width: 400px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin-left: -50px;
+}
+
+  .item {
+    display: block;
+    position: absolute;
+    border: solid;
+    background: white;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.a {
+    transform: rotateY(0deg) translateZ(350px);
+    background: white;
+}
+
+.b {
+    transform: rotateY(60deg) translateZ(350px);
+    background: #FFF;
+}
+
+.c {
+    transform: rotateY(120deg) translateZ(350px);
+    background: #fff;
+}
+
+.d {
+    transform: rotateY(180deg) translateZ(350px);
+    background: #fff;
+}
+
+.e {
+    transform: rotateY(240deg) translateZ(350px);
+    background: #fff;
+}
+
+.f {
+    transform: rotateY(300deg) translateZ(350px);
+    background: #fff;
+}
+
+.next1,
+.prev1 {
+    color: #444;
+    position: absolute;
+    top: 120px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: rgb(196, 194, 194);
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+}
+
+.next1:hover,
+.prev1:hover {
+    color: #000;
+}
+
+.next1:active,
+.prev1:active {
+    top: 124px;
+    box-shadow: 0 1px 0 #999;
+}
+
+.next1 {
+    right: -10.5em;
+}
+
+.prev1 {
+    left: -10.5em;
+}
+
+
+@media (max-width:768px) {
+    .item {
+        display: block;
+        position: absolute;
+        border: solid;
+        background: white;
+        width: 200px;
+        height: 500px;
+        border-radius: 10px;
+        padding: 2px 10px 2px 10px;
+    }
+    .carousel1{
+        width: 200px;
+        margin-left: 35px;
+    }
+
+    .a {
+        transform: rotateY(0deg) translateZ(175px);
+        background: white;
+    }
+
+    .b {
+        transform: rotateY(60deg) translateZ(175px);
+        background: #FFF;
+    }
+
+    .c {
+        transform: rotateY(120deg) translateZ(175px);
+        background: #fff;
+    }
+
+    .d {
+        transform: rotateY(180deg) translateZ(175px);
+        background: #fff;
+    }
+
+    .e {
+        transform: rotateY(240deg) translateZ(175px);
+        background: #fff;
+    }
+
+    .f {
+        transform: rotateY(300deg) translateZ(175px);
+        background: #fff;
+    }
+
+    .next1 {
+        right: 0em;
+        top: 35em;
+        background-color: #999;
+    }
+
+    .prev1 {
+        left: 0em;
+        top: 35em;
+        background-color: #999;
+    }
+
+    .next1:hover,
+    .prev1:hover {
+        color: #000;
+    }
+
+    .next1:active,
+    .prev1:active {
+        top: 35.2em;
+        box-shadow: 0 1px 0 rgb(95, 93, 93);
+    }
+}
