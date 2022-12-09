@@ -1784,7 +1784,8 @@ ol {
   border-radius: 15px;
   min-width: 200px;
   text-align: center;
-  padding: 19px 0;
+  height: 3.5rem;
+  padding: 15px ;
   background-color: transparent;
   z-index: 1;
   transition: 0.3s;
