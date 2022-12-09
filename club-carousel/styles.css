@@ -30,6 +30,7 @@ label:hover {
 }
 .coverflow-list {
   width: 100%;
+  border-radius: 20px;
 }
 .coverflow-list .coverflow-item {
   display: inline-block;
@@ -37,16 +38,20 @@ label:hover {
   margin: 0 -50px;
   position: relative;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+
 }
 .coverflow-list .coverflow-item .album-cover {
   display: block;
   height: 150px;
   margin: 0;
+  border-radius: 20px;
 }
 .coverflow-list .coverflow-item .album-cover img {
   height: 150px;
   width: 150px;
   opacity: 0.5;
+  border-radius: 20px;
 }
 .coverflow-list .coverflow-item .album-name {
   text-align: center;
@@ -58,6 +63,7 @@ label:hover {
   border: none;
   display: block;
   text-shadow: none;
+  border-radius: 20px;
 }
 /* Now apply 3D transforms (never done this before!) */
 .coverflow-list {
@@ -81,6 +87,7 @@ input[type="radio"]:checked + .coverflow-item {
 }
 input[type="radio"]:checked + .coverflow-item img {
   opacity: 1;
+  border-radius: 20px;
 }
 input[type="radio"]:checked + .coverflow-item figcaption {
   color: #FFFFFF;
@@ -122,3 +129,31 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
     width: 161%;
   }
 }
+
+/* CSS for learn more */
+.learn-more {
+  color: #fff;
+  position: relative;
+  display: block;
+  font-weight: 400;
+  border: 1px transparent;
+  border-radius: 15px;
+  min-width: 150px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #222;
+  z-index: 1;
+  transition: 0.3s;
+  color: #444;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.learn-more:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: #baff00;
+}
+
+
+/* CSS for learn more */
