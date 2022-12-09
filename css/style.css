@@ -1773,6 +1773,7 @@ ol {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .know-more {
   color: #fff;
@@ -1784,7 +1785,8 @@ ol {
   border-radius: 15px;
   min-width: 200px;
   text-align: center;
-  padding: 19px 0;
+  height: 3.5rem;
+  padding: 15px ;
   background-color: transparent;
   z-index: 1;
   transition: 0.3s;
