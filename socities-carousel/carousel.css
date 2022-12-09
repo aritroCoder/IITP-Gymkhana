@@ -8,8 +8,10 @@
   }
 
   .carousel1 {
+    width: 400px;
     transform-style: preserve-3d;
     transition: transform 1s;
+    margin-left: -50px;
 }
 
   .item {
@@ -95,6 +97,10 @@
         height: 500px;
         border-radius: 10px;
         padding: 2px 10px 2px 10px;
+    }
+    .carousel1{
+        width: 200px;
+        margin-left: 35px;
     }
 
     .a {
