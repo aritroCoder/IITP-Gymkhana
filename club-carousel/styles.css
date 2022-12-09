@@ -148,12 +148,12 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   text-decoration: none;
   margin-top: 5px;
 }
+
 .learn-more:hover {
   transform: scale(1.2);
   color: black;
   background-color: #baff00;
 }
-input[type="radio"]:checked + .coverflow-item a {
-  color: #FFFFFF;
-}
+
+
 /* CSS for learn more */
