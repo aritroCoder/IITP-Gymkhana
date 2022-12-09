@@ -1771,13 +1771,14 @@ ol {
   background-color: #212121;
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .know-more {
   color: #fff;
   display: inline-block;
   position: relative;
-  left: 44vw;
-  bottom: 8vh;
+  bottom: 4rem;
   font-weight: 400;
   border: 2px solid white;
   border-radius: 15px;
@@ -2149,6 +2150,9 @@ ol {
 
   .footer-item {
     margin-bottom: 40px;
+  }
+  .know-more {
+    margin-top: 8rem;
   }
 }
 
