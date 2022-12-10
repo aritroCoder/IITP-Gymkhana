@@ -59,7 +59,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  max-width: 150px;
 }
 
 input:focus,
@@ -81,6 +81,14 @@ ol {
   margin: 0;
 }
 
+.container{
+  background-color: transparent;
+  padding-top: 60px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
 /*------------------------
   Helper css
 --------------------------*/
@@ -448,7 +456,6 @@ ol {
   float: left;
   display: inline-block;
   background: #121212;
-  padding: 20px 60px 30px;
 }
 
 .phone-number {
