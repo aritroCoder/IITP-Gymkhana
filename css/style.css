@@ -469,18 +469,27 @@ ol {
 /*  Header CSS
 /*----------------------------------------*/
 
+.nav-menu ul li a:hover{
+  text-shadow: 1px 1px 2px red, 0 0 1em yellow, 0 0 0.2em yellow;
+}
+
 .header-area {
     position: absolute;
     width: 100%;
     top: 0;
     z-index: 50;
-    background-color: black;
+    /* background-color: black; */
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2rem);
+    box-shadow: 0 0 1rem 0 hsl(0deg 0% 100% / 10%);
+    -webkit-backdrop-filter: blur(2rem);
+    border: 1px solid rgba(0,0,0,.18);
 }
 
 .logo-area {
     float: left;
     display: inline-block;
-    background: #121212;
+    /* background: #121212; */
 }
 
 .phone-number {
@@ -501,6 +510,7 @@ ol {
 .nav-menu {
     display: inline-block;
     float: right;
+    
 }
 
 .nav-menu ul {
@@ -520,6 +530,7 @@ ol {
     color: #fff;
     font-weight: 500;
     position: relative;
+    
 }
 
 .nav-menu ul li a:after {
@@ -2469,8 +2480,13 @@ ul.social-network li {
         padding: 20px 30px 30px;
     }
     .header-area {
-        background: #121212;
+        /* background: #121212; */
         padding-right: 66px;
+        background-color: rgba(0,0,0,.2);
+        backdrop-filter: blur(2rem);
+        box-shadow: 0 0 1rem 0 hsl(0deg 0% 100% / 10%);
+        -webkit-backdrop-filter: blur(2rem);
+        border: 1px solid rgba(0,0,0,.18);
     }
     .nav-menu {
         width: 100%;
