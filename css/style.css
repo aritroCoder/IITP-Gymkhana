@@ -455,7 +455,7 @@ ol {
     transition: all 0.4s;
 }
 
-.img-popup-warp.mfp-ready .mfp-content {
+.img-popup-warp .mfp-ready .mfp-content {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -854,6 +854,9 @@ ol {
 
 .service-box {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-box .sb-icon {
