@@ -788,6 +788,14 @@ ol {
 	background-size: cover;
 }
 
+.cta-image-box{
+	z-index: 3;
+}
+
+.cta-content{
+	flex: auto;
+}
+
 .cta-section .container {
 	position: relative;
 	z-index: 9;

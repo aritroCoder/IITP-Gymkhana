@@ -24,7 +24,7 @@
 
                 <figcaption class="album-name">
                   NJACK<br>
-                  <a href ="https://stc.iitp.ac.in/njack.html" class="learn-more" 
+                  <a href ="https://stc.iitp.ac.in/njack.html" class="learn-more hidden" id="link1"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -40,7 +40,7 @@
                 />
                 <figcaption class="album-name">
                   Tinkerer's Lab<br>
-                  <a href="https://stc.iitp.ac.in/tinkerers.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/tinkerers.html" class="learn-more hidden" id="link2"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -56,7 +56,7 @@
                 />
                 <figcaption class="album-name">
                   Finance Club<br>
-                  <a href="https://stc.iitp.ac.in/finance.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/finance.html" class="learn-more hidden" id="link3"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -72,7 +72,7 @@
                 />
                 <figcaption class="album-name">
                   ChESSx<br>
-                  <a href="https://stc.iitp.ac.in/chessx.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/chessx.html" class="learn-more hidden" id="link4"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -88,7 +88,7 @@
                 />
                 <figcaption class="album-name">
                   APC<br>
-                  <a href="https://stc.iitp.ac.in/apclub.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/apclub.html" class="learn-more hidden" id="link5"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -104,7 +104,7 @@
                 />
                 <figcaption class="album-name">
                   ACE<br>
-                  <a href="https://stc.iitp.ac.in/ace.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/ace.html" class="learn-more link1 hidden" id="link6"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -120,7 +120,7 @@
                 />
                 <figcaption class="album-name">
                   MaTES<br>
-                  <a href="https://stc.iitp.ac.in/mates.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/mates.html" class="learn-more hidden" id="link7"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -136,7 +136,7 @@
                 />
                 <figcaption class="album-name">
                   Sparkonics<br>
-                  <a href="https://stc.iitp.ac.in/sparkonics.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/sparkonics.html" class="learn-more hidden" id="link8"
                   target="_parent" >Learn More</a>
                 </figcaption>
               </figure>
@@ -152,7 +152,7 @@
                 />
                 <figcaption class="album-name">
                   SCME<br>
-                  <a href="https://stc.iitp.ac.in/scme.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/scme.html" class="learn-more hidden" id="link9"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -168,7 +168,7 @@
                 />
                 <figcaption class="album-name">
                   RnA<br>
-                  <a href="https://stc.iitp.ac.in/rnaclub.html" class="learn-more" 
+                  <a href="https://stc.iitp.ac.in/rnaclub.html" class="learn-more hidden" id="link10"
                   target="_parent">Learn More</a>
                 </figcaption>
               </figure>
@@ -176,7 +176,7 @@
           </li>
         </ol>
       </div>
-      <div class="controls">
+      <!-- <div class="controls">
         <label for="cover-1">1</label>
         <label for="cover-2">2</label>
         <label for="cover-3">3</label>
@@ -187,7 +187,25 @@
         <label for="cover-8">8</label>
         <label for="cover-9">9</label>
         <label for="cover-10">10</label>
-      </div>
+      </div> -->
     </div>
+    <script>
+      var buttons = document.getElementsByClassName("album-cover")
+      Array.from(buttons).forEach((button, index) => {
+        button.addEventListener("click", () => {
+          document.getElementById(`link1`).classList.add("hidden")
+          document.getElementById(`link2`).classList.add("hidden")
+          document.getElementById(`link3`).classList.add("hidden")
+          document.getElementById(`link4`).classList.add("hidden")
+          document.getElementById(`link5`).classList.add("hidden")
+          document.getElementById(`link6`).classList.add("hidden")
+          document.getElementById(`link7`).classList.add("hidden")
+          document.getElementById(`link8`).classList.add("hidden")
+          document.getElementById(`link9`).classList.add("hidden")
+          document.getElementById(`link10`).classList.add("hidden")
+          document.getElementById(`link${index+1}`).classList.remove("hidden")
+        });
+      })
+    </script>
   </body>
 </html>

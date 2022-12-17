@@ -155,5 +155,9 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   background-color: #baff00;
 }
 
+.hidden{
+  visibility: hidden !important;
+}
+
 
 /* CSS for learn more */
