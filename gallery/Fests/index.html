@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  <body>
+    <section id="photostack-1" class="photostack photostack-start">
+      <div>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/1.jpg" alt="img01" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/2.jpg" alt="img02" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/3.jpg" alt="img03" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/4.jpg" alt="img04" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/5.jpg" alt="img05" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/6.jpg" alt="img06" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="" class="photostack-img"
+            ><img src="img/Anwesha/7.jpg" alt="img07" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Anwesha/8.png" alt="img08" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Anwesha/9.png" alt="img09" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Anwesha</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Celesta/1.JPG" alt="img10" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Celesta</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Celesta/2.JPG" alt="img11" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Celesta</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Celesta/3.JPG" alt="img12" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Celesta</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Celesta/4.JPG" alt="img12" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Celesta</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Infinito/1.jpg" alt="img12" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Infinito</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="#" class="photostack-img"
+            ><img src="img/Infinito/2.jpg" alt="img12" width="250px" height="250px"
+          /></a>
+          <figcaption>
+            <h2 class="photostack-title">Infinito</h2>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/photostack.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          new Photostack(document.getElementById("photostack-1"), {
+            callback: function (item) {
+              //console.log(item)
+            }
+          });
+        }, 5000);
+      });
+      // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+      /*new Photostack( document.getElementById( 'photostack-2' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+			new Photostack( document.getElementById( 'photostack-3' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );*/
+    </script>
+  </body>
+</html>
