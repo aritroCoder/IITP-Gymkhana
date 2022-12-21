@@ -470,16 +470,16 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script>
     function openTab() {
-      console.log("Opening tabs");
-      console.log('inside script');
+      // console.log("Opening tabs");
+      // console.log('inside script');
       // document.getElementById("defaultOpen").click();   
     }
     window.onload = () => {
-      console.log('inside windowonload');
+      // console.log('inside windowonload');
       document.body.addEventListener('scroll', () => {
         // console.log('inside windowonscroll');
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          console.log('inside if');
+          // console.log('inside if');
           $(".header-area").css({
             backgroundColor: 'rgba(0, 0, 0, 0.2)',
           backdropFilter: 'blur(2rem)',
