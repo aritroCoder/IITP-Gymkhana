@@ -885,19 +885,15 @@ ol {
 
 .service-box .sb-icon .sb-img-icon {
     position: absolute;
-    left: 0;
     bottom: 0;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    left: 15px;
+    margin-bottom: 5px;
 }
 
 .service-box .sb-icon .sb-img-icon img {
-    opacity: 0.2;
     max-height: 70px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    left: 15px;
+    margin-bottom: 5px;
 }
 
 .service-box .sb-icon::after {
@@ -925,24 +921,6 @@ ol {
     transition: all 0.4s;
 }
 
-.service-box:hover .sb-icon {
-    background-color: #baff00;
-}
-
-.service-box:hover .sb-icon .sb-img-icon {
-    left: 15px;
-    margin-bottom: 5px;
-}
-
-.service-box:hover .sb-icon .sb-img-icon img {
-    opacity: 1;
-}
-
-.service-box:hover .readmore {
-    background-color: #baff00;
-    padding: 2px 10px;
-}
-
 
 /*----------------------------------------*/
 
@@ -952,7 +930,7 @@ ol {
 
 .cta-section {
     position: relative;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .cta-section:after {
@@ -971,9 +949,20 @@ ol {
     width: 50%;
     height: 90.8%;
     left: 0;
-    background-image: url("../img/cta-img.jpg");
+    background-image: url("../img/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.gallery-section-image-box{
+    position: absolute;
+    width: 50%;
+    height: 90.8%;
+    left: 0;
+    background-image: url("../img/gymkhana-building.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+     box-shadow: 4px 4px 8px 8px rgb(0 0 0 / 58%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .cta-section .container {
@@ -2158,7 +2147,8 @@ ul.social-network li {
 .know-more:hover {
     transform: scale(1.2);
     color: black;
-    background-color: white;
+    background-color: #2dc997;
+    border: none;
 }
 
 
@@ -2280,6 +2270,7 @@ ul.social-network li {
     .testimonials-image-box,
     .testimonials-section:after,
     .cta-image-box,
+    .gallery-section-image-box
     .cta-section:after {
         display: none;
     }
@@ -2431,6 +2422,7 @@ ul.social-network li {
     .testimonials-image-box,
     .testimonials-section:after,
     .cta-image-box,
+    .gallery-section-image-box,
     .cta-section:after {
         display: none;
     }

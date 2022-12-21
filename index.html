@@ -25,7 +25,6 @@
   <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/owl.carousel.css" />
-  <link rel="stylesheet" href="fest-carousel/carousel.css" />
   <link rel="stylesheet" href="socities-carousel/carousel.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- Note: There are two style.css files in this project, and the one used here is ./css/style.css -->
@@ -89,7 +88,7 @@
 
   <main id="main">
     <!-- About section start -->
-    <section id="about" class="cta-section pt100 pb50" style="margin-bottom: 25vh;">
+    <section id="about" class="cta-section pt100 pb50">
       <div class="cta-image-box" style="z-index: 3"></div>
       <div class="container" style="max-width: 1279px;">
         <div class="row">
@@ -129,7 +128,7 @@
     </section>
     <!-- About section end -->
 
-    <div class="service-section spad" style="margin-bottom:100px;">
+    <div class="service-section spad">
       <div class="container">
         <div class="section-title">
           <h2>Our Societies</h2>
@@ -214,11 +213,11 @@
       </div>
     </div>
 
-    <div class="page-section spad pb50">
+    <div class="page-section pb50">
       <div class="container">
         <div class="col-lg-3">
           <div class="section-title">
-            <h1>Some Glimses</h1>
+            <h1>Some Glimpses</h1>
           </div>
         </div>
         <!-- portfolio filter menu -->
@@ -234,7 +233,7 @@
         </div>
       </div>
       <!-- portfolio items -->
-      <div class="portfolio-warp spad">
+      <div class="portfolio-warp" style="padding-top: 100px;">
         <div id="portfolio">
           <div class="grid-sizer"></div>
           <!-- portfolio item -->
@@ -268,14 +267,14 @@
 
     <!-- Clubs section start -->
     <section id="clubs">
-      <div class="container">
-        <div class="our-clubs_carousel">
-          <iframe class="carousel" src="club-carousel/hosca_clubs.html" width="100%" height="400" frameborder="0"
+      <div>
+        <div class="our-clubs_carousel" style="margin-bottom: 0">
+          <iframe loading="lazy" class="carousel" src="club-carousel/hosca_clubs.html" width="100%" height="400" frameborder="0"
             style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <a href="https://stc.iitp.ac.in/" class="know-more">Know More</a>
         </div>
         <div class="our-clubs_carousel">
-          <iframe class="carousel" src="club-carousel/stc_clubs.html" width="100%" height="400" frameborder="0"
+          <iframe loading="lazy" class="carousel" src="club-carousel/stc_clubs.html" width="100%" height="400" frameborder="0"
             style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <a href="https://stc.iitp.ac.in/" class="know-more">Know More</a>
         </div>
@@ -285,16 +284,16 @@
     <!-- Clubs section end -->
 
     <!-- Gallery section start -->
-    <section id="gallery" class="cta-section pt100 pb50">
-      <div class="cta-image-box"></div>
-      <div class="container">
+    <section id="about" class="cta-section pt100 pb50">
+      <div class="gallery-section-image-box" style="z-index: 3"></div>
+      <div class="container" style="max-width: 1279px;">
         <div class="row">
-          <div class="col-lg-7 pl-lg-0 offset-lg-5 cta-content">
+          <div class="col-lg-7 pl-lg-0 offset-lg-7 cta-content" style="flex: auto;">
             <h2 class="sp-title">Gallery of <span>IITP</span></h2>
             <p>
               Description about fests of IITP Pellentesque lorem dolor, malesuada eget tortor vitae, tristique lacinia
               lectus. Pellentesque sed accumsan risus, id aliquam nulla. Integer lorem risus, feugiat at mauris
-              malesuada, accumsan pellentesque ipsum. Nunc dapibus,
+              malesuada, accumsan pellentesque ipsum. Nunc dapibus,<br/>
               libero ut pulvinar accumsan, tortor nisl iaculis ligula. Curabitur finibus dolor vel lectus pretium
               interdum a eget ante.
             </p>
@@ -316,19 +315,19 @@
     <!-- Gallery section end -->
     <br /><br />
 
-    <!-- Social Link section start-->
-    <section id="sociallinks">
+    <!-- Fests gallery start-->
+    <section id="FestGallery" class="pt100">
 
-        <iframe src="gallery/Fests/index.html" height="600" width="100%" title="Gallery-gymkhana"></iframe>
+        <iframe loading="eager" src="gallery/Fests/index.html" height="850px" width="100%" title="Gallery-gymkhana"></iframe>
 
     </section>
-    <!-- Social Link section end -->
+    <!-- Fests gallery section end -->
 
   </main>
   <!-- Main section ends --------------------------------------------------------------->
 
   <!-- Clients section start -->
-  <div class="client-section spad">
+  <!-- <div class="client-section spad">
     <div class="container">
       <div id="client-carousel" class="client-slider">
         <div class="single-brand">
@@ -358,7 +357,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Clients section end -->
 
   <!-- Footer section start -->
@@ -431,7 +430,7 @@
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
           <div id="map">
-            <iframe
+            <iframe loading="lazy" 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721"
               width="100%" height="225px" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
           </div>
