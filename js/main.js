@@ -43,6 +43,38 @@ $(window).on('load', function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
+	/*------------------
+	Header Transperency
+	---------------------*/
+	const Header = document.getElementById('navbar');
+	const Body = document.getElementsByTagName('body')[0];
+	
+		if(Body.scrollTop == 0){
+			Header.style.background = "Transparent";
+			Header.style.backdropFilter = "none";
+			Header.style.border = "none";
+			Header.style.boxShadow = "none";
+		}else{
+			Header.style.background = "rgba(0,0,0,0.2)";
+			Header.style.backdropFilter = "blur(2rem)";
+			Header.style.border = "1px solid rgba(0,0,0,.18)";
+			Header.style.boxShadow = "0 0 1rem 0 hsl(0deg 0% 100% / 10%)";
+		}
+	Body.addEventListener('scroll',()=>{
+		if(Body.scrollTop == 0){
+			Header.style.background = "Transparent";
+			Header.style.backdropFilter = "none";
+			Header.style.border = "none";
+			Header.style.boxShadow = "none";
+		}else{
+			Header.style.background = "rgba(0,0,0,0.2)";
+			Header.style.backdropFilter = "blur(2rem)";
+			Header.style.border = "1px solid rgba(0,0,0,.18)";
+			Header.style.boxShadow = "0 0 1rem 0 hsl(0deg 0% 100% / 10%)";
+		}
+	})
+
+
 
 
 	/*------------------
