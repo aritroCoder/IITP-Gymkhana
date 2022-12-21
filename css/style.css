@@ -446,7 +446,7 @@ ol {
 }
 
 .img-popup-warp .mfp-content {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
