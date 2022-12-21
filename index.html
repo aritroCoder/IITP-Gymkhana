@@ -214,7 +214,7 @@
       </div>
     </div>
 
-    
+
     <!-- Page section end -->
 
     <!-- Clubs section start -->
@@ -296,7 +296,8 @@
             <a class="img-popup" href="img/portfolio/7.jpg"></a>
           </div>
           <!-- portfolio item -->
-          <div class="grid-item set-bg sports" data-setbg="img/portfolio/Inter IIT19.jpg" style="background-image: url('img/portfolio/Inter IIT19.jpg');" >
+          <div class="grid-item set-bg sports" data-setbg="img/portfolio/Inter IIT19.jpg"
+            style="background-image: url('img/portfolio/Inter IIT19.jpg');">
             <a class="img-popup" href="img/portfolio/Inter IIT19.jpg"></a>
           </div>
           <!-- portfolio item -->
@@ -466,16 +467,43 @@
   </footer>
   <!-- Footer section end -->
 
+  <script src="js/jquery-2.1.4.min.js"></script>
   <script>
     function openTab() {
       console.log("Opening tabs");
-      document.getElementById("defaultOpen").click();
+      console.log('inside script');
+      // document.getElementById("defaultOpen").click();   
+    }
+    window.onload = () => {
+      console.log('inside windowonload');
+      document.body.addEventListener('scroll', () => {
+        // console.log('inside windowonscroll');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          console.log('inside if');
+          $(".header-area").css({
+            backgroundColor: 'rgba(0, 0, 0, 0.2)',
+          backdropFilter: 'blur(2rem)',
+          boxShadow: '0 0 1rem 0 hsl(0deg 0 % 100 % / 10%)',
+          border: '1px solid rgba(0, 0, 0, .18)'
+        });
+    }
+        else {
+          $(".header-area").css({
+            backgroundColor: 'transparent',
+          backdropFilter: 'blur(0rem)',
+          boxShadow: 'none',
+          border: 'none'
+        });
+    }
+
+      })
+
     }
     openTab();
+
   </script>
 
   <!--====== Javascripts & Jquery ======-->
-  <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>

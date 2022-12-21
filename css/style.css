@@ -470,7 +470,7 @@ ol {
 /*----------------------------------------*/
 
 .nav-menu ul li a:hover{
-  text-shadow: 1px 1px 2px red, 0 0 1em yellow, 0 0 0.2em yellow;
+  text-shadow: 1px 1px 2px aliceblue, 0 0 1em #ffffff, 0 0 0.2em aliceblue;
 }
 
 .header-area {
@@ -479,11 +479,12 @@ ol {
     top: 0;
     z-index: 50;
     /* background-color: black; */
-    background-color: rgba(0,0,0,0.2);
+    /* background-color: rgba(0,0,0,0.2);
     backdrop-filter: blur(2rem);
     box-shadow: 0 0 1rem 0 hsl(0deg 0% 100% / 10%);
     -webkit-backdrop-filter: blur(2rem);
-    border: 1px solid rgba(0,0,0,.18);
+    border: 1px solid rgba(0,0,0,.18); */
+    max-height: 103px;
 }
 
 .logo-area {
@@ -509,8 +510,8 @@ ol {
 
 .nav-menu {
     display: inline-block;
-    float: right;
-    
+    position: absolute;
+    right: 0;
 }
 
 .nav-menu ul {
@@ -2313,6 +2314,38 @@ ul.social-network li {
     }
 }
 
+@media only screen and (max-width: 847px) {
+    .nav-switch {
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        top: 20px;
+        display: block;
+    }
+    .nav-menu {
+        position: absolute;
+        width: calc(100% - 90px);
+        left: 80px;
+        background: #121212;
+        top: 100%;
+        margin-top: 11px;
+        display: none;
+    }
+    .nav-menu ul li a {
+        display: block;
+        padding: 16px 21px;
+        border-bottom: 1px solid #202020;
+        margin-right: 0;
+    }
+    .nav-menu ul li a:after {
+        left: 20px;
+    }
+    .nav-menu ul li.active>a:after,
+    .nav-menu ul li a:hover:after {
+        height: 10px;
+    }
+}
 
 /* Large Mobile :480px. */
 

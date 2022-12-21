@@ -344,3 +344,28 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// $(window).scroll(function () {
+// 	console.log('scrolling');
+	
+// 	var a = 25;
+// 	var pos = $(window).scrollTop();
+// 	if (pos > a) {
+// 	  console.log('pos > a');
+// 	  $(".header-area").css({
+// 		backgroundColor: 'rgba(0, 0, 0, 0.2)',
+// 		backdropFilter: 'blur(2rem)',
+// 		boxShadow: '0 0 1rem 0 hsl(0deg 0 % 100 % / 10%)',
+// 		border: '1px solid rgba(0, 0, 0, .18)'
+// 	  });
+// 	}
+// 	else {
+// 	  $(".header-area").css({
+// 		backgroundColor: 'transparent',
+// 		backdropFilter: 'blur(0rem)',
+// 		boxShadow: 'none',
+// 		border: 'none'
+// 	  });
+// 	}
+//   });
+
