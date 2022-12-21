@@ -225,6 +225,8 @@
 		this._shuffle();
 	}
 
+	var zIndex = 1;
+
 	// display items (randomly)
 	Photostack.prototype._shuffle = function( resize ) {
 		var iter = resize ? 1 : this.currentItem.getAttribute( 'data-shuffle-iteration' ) || 1;
@@ -323,6 +325,8 @@
 						self.currentItem.style.WebkitTransform = 'translate(' + self.centerItem.x + 'px,' + self.centerItem.y + 'px) rotate(0deg)';
 						self.currentItem.style.msTransform = 'translate(' + self.centerItem.x + 'px,' + self.centerItem.y + 'px) rotate(0deg)';
 						self.currentItem.style.transform = 'translate(' + self.centerItem.x + 'px,' + self.centerItem.y + 'px) rotate(0deg)';
+						self.currentItem.style.zIndex = zIndex;
+            			zIndex++;
 						// if there is something behind..
 						if( self.currentItem.querySelector( '.photostack-back' ) ) {
 							self._addItemPerspective();
@@ -333,6 +337,8 @@
 						item.style.WebkitTransform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
 						item.style.msTransform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
 						item.style.transform = 'translate(' + translation.x + 'px,' + translation.y + 'px) rotate(' + Math.floor( Math.random() * (maxrot - minrot + 1) + minrot ) + 'deg)';
+						// item.style.zIndex = zIndex;
+						// zIndex++;
 					}
 
 					if( self.started ) {
@@ -356,7 +362,7 @@
 		};
 		
 		// translation values to center an item
-		this.centerItem = { x : this.sizes.inner.width / 2 - this.sizes.item.width / 2, y : this.sizes.inner.height / 2 - this.sizes.item.height / 2 };
+		this.centerItem = { x : this.sizes.inner.width / 2 - this.sizes.item.width / 2, y : this.sizes.inner.height / 2 - this.sizes.item.height / 2 - 80 };
 	}
 
 	Photostack.prototype._isOverlapping = function( itemVal ) {
