@@ -1,191 +1,247 @@
-/* * {
-    outline: 0;
-    border: 0;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-size;
-    font-family: cursive;
-  } */
+.tile
+{
+  width:100%;
+  margin:60px auto;
+}
+#tile-1 .tab-pane
+{
+  padding:15px;
+  height:fit-content;
+}
+#tile-1 .nav-tabs
+{
+  position:relative;
+  border:none!important;
+  background-color:#36ba8b;
+/*   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); */
+  border-radius:6px;
+}
+#tile-1 .nav-tabs li
+{
+  margin:0px!important;
+}
+#tile-1 .nav-tabs li a
+{
+  position:relative;
+  margin-right:0px!important;
+  padding: 20px 40px!important;
+  font-size:16px;
+  border:none!important;
+  color:#333;
+}
+#tile-1 .nav-tabs a:hover
+{
+  background-color:#36ba8b!important;
+  border:none;
+}
+#tile-1 .slider
+{
+  display:inline-block;
+  width:30px;
+  height:4px;
+  border-radius:3px;
+  background-color:#fff;
+  position:absolute;
+  z-index:1200;
+  bottom:0;
+  transition:all .4s linear;
   
-  .team_container {
-    width: 100%;
-    height: 100vh;
-    background-image: url("./cool-background.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    position: relative;
-  }
-  .team_container::before { 
-    content: "";
-    position: absolute;
-    inset: 0px;
-    opacity: 0.8;
-    background: linear-gradient(to top, black, transparent);
-  }
-  
-  .signboard {
-    width: 300px;
-    height: 100px;
-    margin: 50px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(45deg, #F40076, #DF98FA);
-    border: 1px #dbd8d821 solid;
-    transform-style: preserve-3d;
-    text-transform: capitalize;
-    border-radius: 10px;
-    transform: rotateY(-180deg);
-    transform-origin: left;
-    opacity: 0;
-    animation: rotate 1s 1 ease-in forwards;
-  }
-  @keyframes rotate {
-    85% {
-      transform: rotateY(20deg);
-      opacity: 1;
-    }
-    90% {
-      transform: rotateY(10deg);
-      opacity: 1;
-    }
-    100% {
-      transform: rotateY(0deg);
-      opacity: 1;
-    }
-  }
-  
-  .signboard h1 {
-    color: white;
-    font-size: xxx-large;
-  }
-  
-  .container2 {
-    --animation-status: running;
-    width: 100%;
-    max-width: 900px;
-    height: 210px;
-    margin: 30px 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    transform-style: preserve-3d;
-    perspective: 100000px;
-    transform-origin: center;
-    animation: rotateY 10s infinite linear;
-    animation-play-state: var(--animation-status);
-  }
-  /* here if user hover container2 of card it will stop rotating by changing animation-status value to stop */
-  .container2:hover {
-    --animation-status: paused;
-  }
-  @keyframes rotateY {
-    from {
-      transform: rotateY(0deg);
-    }
-  
-    to {
-      transform: rotateY(360deg);
-    }
-  }
-  
-  .container2 .card {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    background-color: white;
-    border-radius: 15px;
-    transform: rotateY(calc(45deg * var(--i))) translateZ(350px) translateX(0%) scaleY(0);
-    transform-origin: bottom;
-    transform-style: preserve-3d;
-    overflow: hidden;
-    border: 1px #dbd8d821 solid;
-    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgb(171 171 171 / 40%));
-    animation : scaleY 0.5s calc(1s + (0.1s * var(--i))) 1 forwards; 
-  }
-  @keyframes scaleY {
-    100% {
-      transform: rotateY(calc(45deg * var(--i))) translateZ(350px) translateX(0%) scaleY(1);
-    }
-  }
-  .container2 .card:focus {
-    box-shadow: 0px 3px 5px #e14dba inset;
-  }
-  
-  .container2 .card img.vector {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transition: all 0.3s;
-    transition: width 0.3s, height 0.3s, border-radius 0.3s;
-    cursor: pointer;
-  }
-  .container2 .card:focus img.vector {
-    width: 100px;
-    height: 100px;
+}
+#tile-1 .nav-tabs .active
+{
+  background-color:transparent!important;
+  border:none!important;
+  color:#fff!important;
+}
+
+.fab{
+  color: #435aa8;
+}
+.fab:hover{
+  color: #f15b40;
+}
+
+h2{
+  color: #fff;
+  font-family: serif;
+}
+
+.set-bg{
+  background-position: center
+}
+
+
+/* TITRE */
+h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  display: inline-block;
+}
+h1 div {
+  position: relative;
+  float: left;
+}
+h1 div:first-child {
+  color: #3498db;
+  margin-right: 1rem;
+}
+/* PROFIL */
+.blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
     border-radius: 50%;
-    cursor: default;
+    width: 8px;
+    height: 8px;
+    margin-bottom:10px;
+    
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+margin-bottom:10px;
+}
+
+.our-team-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our-team-section:before {
+  position: absolute;
+  top: -0;
+  left: 0;
+  content: " ";
+  background: url(img/service-section-bottom.png);
+  background-size: 100% 100px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  z-index: 99;
+}
+.our-team {
+  padding: 0 0 40px;
+  background: #f9f9f9;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 5px solid #00325a;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+}
+.our-team:hover {
+  border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+.our-team .pic:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #00325a;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 1;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:before {
+  height: 100%;
+  background: #2f2f2f;
+}
+.our-team .pic:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffffff00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s linear 0s;
+}
+.our-team:hover .pic:after {
+  background: #145889;
+}
+.our-team .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: translate(0, 21px);
+  position: relative;
+  z-index: 2;
+}
+.our-team:hover .pic img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+.our-team .team-content {
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+.our-team .title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e5052;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.our-team .post {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+.our-team .social {
+  width: 100%;
+  padding-top: 10px;
+  margin: 0;
+  background: #2f2f2f;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+.our-team:hover .social {
+  bottom: 0;
+}
+.our-team .social li {
+  display: flex;
+}
+.our-team .social li a {
+  display: block;
+  padding-top: 3px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+  transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover {
+  color: #f15b40;
+}
+@media only screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 10px;
   }
-  .container2 .card .content {
-    text-align: center;
-    display: none;
-  }
-  .container2 .card:focus .content {
-    display: block;
-  }
-  
-  .container2 .card .content h3 {
-    color: #F40076;
-  }
-  
-  .container2 .card .content p {
-    color: #524e4e;
-    font-size: 15px;
-  }
-  
-  .container2 .card .contact {
-    width: fit-content;
-    position: absolute;
-    left: 0px;
-    top: 0;
-    border-radius: 0% 0% 49% 0%;
-    background: linear-gradient(45deg, #F40076, #DF98FA);
-    transform-origin: bottom;
-    transform-style: preserve-3d;
-    z-index: 55;
-    transition: filter 0.7s;
-    filter: blur(300px);
-    cursor: pointer;
-    padding-block: 3px;
-  }
-  .container2 .card:focus .contact {
-    filter: blur(0px);
-  }
-  
-  .container2 .card .contact i {
-    display: block;
-    padding: 1px 18px 1px 10px;
-    font-size: 23px;
-    color: white;
-    filter: blur(25px);
-    transition: filter 0.7s calc(0.1s * var(--j));
-    margin-bottom: 2px;
-  }
-  .container2 .card:hover .contact i {
-    transition: filter 0.7s calc(0.7s + (0.2s * var(--j)));
-    filter: blur(0px);
-  }
+}
