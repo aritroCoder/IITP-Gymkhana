@@ -110,6 +110,7 @@ ol {
     font-size: 60px;
     margin-bottom: 40px;
     font-family: var(--font-secondary);
+    text-align: center;
 }
 
 .sp-title span {
@@ -145,6 +146,8 @@ ol {
 
 .section-title {
     margin-bottom: 75px;
+    width: 57vw;
+    text-align: center;
 }
 
 .section-title h1,
@@ -796,9 +799,30 @@ ol {
     color: #fff;
 }
 
+.btn-get-started{
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 5vh;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 0px;
+}
+
 #hero .caption .btn-get-started:hover {
     background: #2dc997;
     border: 2px solid #2dc997;
+}
+.btn-get-started:hover{
+    background: #2dc997;
+    border: 2px solid #2dc997;
+    color: #fff;
 }
 
 @media screen and (min-width:400px) {
@@ -815,6 +839,14 @@ ol {
         padding: 5px 20px;
         margin: 5vh;
     }
+    .btn-get-started{
+        font-weight: 300;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px 20px;
+        margin: 5vh;
+    margin-top: 0px;
+    }
 }
 
 @media screen and (min-width:800px) {
@@ -830,6 +862,13 @@ ol {
         padding: 8px 28px;
         margin: 5vh;
     }
+    .btn-get-started{
+        font-weight: 500;
+        font-size: 15px;
+        padding: 8px 28px;
+        margin: 5vh;
+    margin-top: 0px;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -844,6 +883,13 @@ ol {
         font-size: 15px;
         padding: 8px 28px;
         margin: 5vh;
+    }
+    .btn-get-started{
+        font-weight: 500;
+        font-size: 15px;
+        padding: 8px 28px;
+        margin: 5vh;
+    margin-top: 0px;
     }
 }
 

@@ -1,3 +1,9 @@
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Cardo", sans-serif;
+}
+
 html,
 body {
   background: #212121;
@@ -96,6 +102,12 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   -webkit-transform: rotateY(-45deg);
   background: #515151;
 }
+.club_text{
+  padding: 0 20px;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: var(--font-primary);
+}
 /*@keyframes cover-forward {
   0% { transform: rotateY( 45deg ); }
   50% { transform: rotateY( 0deg ) translate3d( 60px,0,0 ) scale3d(1.2,1.2,1.2); z-index:999; }
@@ -119,6 +131,10 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
     writing-mode: vertical-lr;
     margin-right: 73px;
     margin-top: 26px;
+    padding: 0 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: var(--font-primary);
   }
   .controls{
     display: none;

@@ -22,6 +22,7 @@
     height: 283px;
     border-radius: 10px;
     padding: 5px 20px 5px 20px;
+    box-shadow: rgb(0 0 0 / 58%) 11px 10px 8px 8px, rgb(0 0 0 / 19%) 8px 9px 20px 0px;
 }
 
 .a {
@@ -93,7 +94,7 @@
         border: solid;
         background: white;
         width: 200px;
-        height: 320px;
+        height: 331px;
         border-radius: 10px;
         padding: 2px 10px 2px 10px;
     }
