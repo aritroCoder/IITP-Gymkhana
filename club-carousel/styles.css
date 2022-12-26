@@ -105,8 +105,9 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
 .club_text{
   padding: 0 20px;
     margin-bottom: 0;
-    font-size: 40px;
-    font-family: var(--font-primary);
+    font-size: 50px;
+    font-weight: 400;
+    font-family: var(--font-secondary);
 }
 /*@keyframes cover-forward {
   0% { transform: rotateY( 45deg ); }
