@@ -1,3 +1,42 @@
+
+ :root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Cardo", sans-serif;
+}
+
+
+#cards{
+  background: #222222;
+}
+#cards .card {
+  border-radius: 20px;
+  min-height: 100%;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+#cards .heading-border {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+}
+
+#cards .card .user-picture img {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  background: #f8f9fa !important;
+  padding: 10px;
+}
+
+#cards .card .user-content .user-name {
+  margin-right: 150px;
+}
+.header-title{
+  font-family: serif;
+  text-align: center;
+}
+
 .tile
 {
   width:100%;
@@ -42,7 +81,7 @@
   border-radius:3px;
   background-color:#fff;
   position:absolute;
-  z-index:1200;
+  z-index:5;
   bottom:0;
   transition:all .4s linear;
   
@@ -206,12 +245,14 @@ margin-bottom:10px;
   letter-spacing: 1px;
   text-transform: capitalize;
   margin-bottom: 5px;
+  font-family: serif;
 }
 .our-team .post {
   display: block;
   font-size: 15px;
   color: #4e5052;
   text-transform: capitalize;
+  font-family: sans-serif;
 }
 .our-team .social {
   width: 100%;
