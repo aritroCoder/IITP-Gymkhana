@@ -35,12 +35,16 @@ h6 {
     color: #222222;
     margin: 0;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 200;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    font-size: 60px;
+    background: #007bb7;
+    font-size: 40px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 h1 span {
@@ -51,10 +55,12 @@ h1 span {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 26px;
 }
 
 h3 {
+    background: #1DA1F2;
+    text-align: center;
     font-size: 24px;
     margin-bottom: 30px;
 }
