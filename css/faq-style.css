@@ -1,0 +1,70 @@
+.panel-header {
+    font-family: sans-serif;
+}
+
+.nav-link {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.header-title {
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.section-title {
+    font-family: sans-serif;
+}
+
+.panel-body {
+    font-family: serif;
+    font-size: large;
+    font-weight: 610;
+}
+
+.element {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row_acc {
+    width: 100%;
+}
+
+.nav-tabs {
+    height: 72px;
+    margin: auto;
+    text-align: center;
+    background-color: #353535;
+    color: white;
+    border-radius: 50px;
+    margin-bottom: 36px;
+}
+
+.nav-item {
+    text-align: center;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #cac2c2
+}
+
+.nav-link:hover {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 30px;
+    color: #a6ff00 !important;
+}
+
+.nav-tabs .active {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 30px;
+    color: #a6ff00 !important;
+}
