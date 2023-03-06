@@ -1,25 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
+
+:root{
+    --font-primary: "Inter",sans-serif;
+    --font-secondary: "Cardo", serif;
+}
+
 .panel-header {
-    font-family: sans-serif;
+    font-family: var(--font-primary);
+    font-size: 17px !important;
+    line-height: normal;
 }
 
 .nav-link {
-    font-family: sans-serif;
+    font-family: var(--font-primary); 
     font-weight: 700;
 }
 
 .header-title {
-    font-family: sans-serif;
+    font-family: var(--font-primary);
     font-weight: 800;
 }
 
-.section-title {
-    font-family: sans-serif;
+.section-title> * {
+    font-family: var(--font-secondary) !important;
+    font-weight: 500 !important;
 }
 
 .panel-body {
-    font-family: serif;
-    font-size: large;
+    font-family: var(--font-primary);
     font-weight: 610;
+}
+
+.panel-body p {
+    font-size: 17px !important;
 }
 
 .element {
@@ -34,10 +47,10 @@
 }
 
 .nav-tabs {
-    height: 72px;
+    min-height: 72px;
     margin: auto;
     text-align: center;
-    background-color: #353535;
+    background-color: #575353;
     color: white;
     border-radius: 50px;
     margin-bottom: 36px;
