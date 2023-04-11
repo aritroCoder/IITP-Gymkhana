@@ -146,7 +146,7 @@ ol {
 
 .section-title {
     margin-bottom: 75px;
-    width: 57vw;
+    /* width: 57vw; */
     text-align: center;
 }
 
@@ -2092,16 +2092,19 @@ ul.social-network li {
 .portfolio-filter li {
     display: inline-block;
     margin-right: 40px;
-    font-size: 14px;
+    font-size: 22px;
     color: #222;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
+
 }
 
 .portfolio-filter li.active {
     text-decoration: underline;
     -webkit-text-decoration-color: #2046f2;
     text-decoration-color: #2046f2;
+    color: #2046f2;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .portfolio-warp {
