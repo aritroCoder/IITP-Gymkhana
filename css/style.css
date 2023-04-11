@@ -2091,10 +2091,10 @@ ul.social-network li {
 .portfolio-filter li {
     display: inline-block;
     margin-right: 40px;
-    font-size: 14px;
+    font-size: 24px;
     color: #222;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .portfolio-filter li.active {
