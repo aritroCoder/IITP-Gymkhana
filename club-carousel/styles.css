@@ -12,7 +12,11 @@ body {
 }
 .main-container {
   margin: 4em auto 0 auto;
-  max-width: 698px;
+  max-width: 835px;
+}
+.main-container-hosca {
+  margin: 4em auto 0 auto;
+  max-width: 660px;
 }
 .main-container .controls {
   margin: 0 auto;
