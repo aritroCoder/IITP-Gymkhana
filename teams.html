@@ -60,12 +60,13 @@
     <!-- Header section end -->
 
     <!-- Page header section start -->
-    <section class="page-header-section set-bg" style="background-color: #222;" data-setbg="img/hero/team.svg">
+    <!-- <section class="page-header-section set-bg" style="background-color: #222;" data-setbg="img/hero/team.svg">
         <div class="container text-center" style="padding-top: 120px;">
             <h1 class="header-title text-center" style="color: white; margin-top: 5px;">Our Team<span>.</span></h1>
         </div>
-    </section>
+    </section> -->
     <!-- Page header section end -->
+
     <section id="cards">
         <div class="container py-2">
             <div class="row pb-4">
@@ -909,7 +910,7 @@
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                     // console.log('inside if');
                     $(".header-area").css({
-                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                        backgroundColor: 'rgba(255, 255, 255, 1)',
                         backdropFilter: 'blur(2rem)',
                         boxShadow: '0 0 1rem 0 hsl(0deg 0 % 100 % / 10%)',
                         border: '1px solid rgba(0, 0, 0, .18)'
@@ -917,7 +918,7 @@
                 }
                 else {
                     $(".header-area").css({
-                        backgroundColor: 'transparent',
+                        backgroundColor:'rgba(255, 255, 255, 1)',
                         backdropFilter: 'blur(0rem)',
                         boxShadow: 'none',
                         border: 'none'
