@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Cardo", sans-serif;
@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #212121;
+  background: #F4F7FE;
   font-family: Helvetica, sans-serif;
   font-size: 12px;
 }
@@ -75,7 +75,7 @@ label:hover {
   text-shadow: none;
   border-radius: 20px;
 }
-/* Now apply 3D transforms (never done this before!) */
+ Now apply 3D transforms (never done this before!) 
 .coverflow-list {
   -webkit-transform: perspective(900px);
   -webkit-transform-style: preserve-3d;
@@ -113,7 +113,7 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
     font-weight: 400;
     font-family: var(--font-secondary);
 }
-/*@keyframes cover-forward {
+@keyframes cover-forward {
   0% { transform: rotateY( 45deg ); }
   50% { transform: rotateY( 0deg ) translate3d( 60px,0,0 ) scale3d(1.2,1.2,1.2); z-index:999; }
   100% { transform: rotateY( 45deg ) translate3d( 0,0,0 ) scale3d(1,1,1); }
@@ -122,7 +122,7 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
 @keyframes cover-return {
   0% { transform: rotateY( 45deg ); }
   100% { transform: rotateY( 0deg ) translate3d( 150px,0,0 ) scale3d(1.2,1.2,1.2); }
-}*/
+}
 
 @media only screen and (max-width: 730px) {
   .coverflow-list {
@@ -130,7 +130,7 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   }
   .club_text{
     color: white;
-    /* top: 76%; */
+    /* top: 76%; 
     position: relative;
     float: left;
     writing-mode: vertical-lr;
@@ -151,7 +151,7 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   }
 }
 
-/* CSS for learn more */
+CSS for learn more 
 .learn-more {
   color: #fff;
   position: relative;
@@ -181,4 +181,229 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
 }
 
 
-/* CSS for learn more */
+ CSS for learn more */
+
+
+ /* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  margin-top: 50px;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F7FE;
+}
+
+.main-container-hosca {
+  margin-left: 330px;
+  max-width: 660px;
+  }
+  
+  
+  .club_text{
+      padding: 0 20px;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 50px;
+      color: #292929;
+      background-color: #06D85F;
+      text-align: center;
+  }
+  
+  .line1{
+    width: 400px;
+    height: 0px;
+    
+    border: 2px solid #435AA8;
+    margin-left: 125px;
+    margin-bottom: 30px;
+  }
+
+.slide-container{
+  z-index: auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #F4F7FE;
+  position: absolute;
+}
+.slide-content{
+  z-index: auto;
+  position: sticky;
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card{
+  border-radius: 15px;
+  background-color: #FFF;
+  height: 250px;
+  width: 80px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0 0;
+}
+
+.card-image{
+  position: relative;
+  height: 170px;
+  width: 170px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content a{
+  text-decoration: none;
+}
+
+.button{
+font-size: 25px;
+font-weight: 800;
+color: #333;
+position: relative;
+display: inline-block;
+}
+
+.button:after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #333;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.button:hover:after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 80px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.popup h4 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.popup .content p{
+  max-height: 30%;
+  overflow: auto;
+  text-align: justify;
+}
+
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  z-index: auto;
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+
+  .club_text{
+    padding: 0;
+}
+  
+}

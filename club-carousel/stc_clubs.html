@@ -1,247 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+    <title>STC</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
     <!--- This may need to change --->
-    <div class="main-container">
-      <h1 class="club_text" style="text-align: center; color: white">STC Clubs</h1>
-      <div class="coverflow-container">
-        <ol class="coverflow-list">
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-1" />
-          <li class="coverflow-item">
-            <label for="cover-1">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\NJACKLogo.webp"
-                />
 
-                <figcaption class="album-name">
-                  NJACK<br>
-                  <a href ="https://stc.iitp.ac.in/njack.html" class="learn-more hidden" id="link1"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-2" />
-          <li class="coverflow-item">
-            <label for="cover-2">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\TinkersLogo.webp"
-                />
-                <figcaption class="album-name">
-                  Tinkerer's Lab<br>
-                  <a href="https://stc.iitp.ac.in/tinkerers.html" class="learn-more hidden" id="link2"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-3" />
-          <li class="coverflow-item">
-            <label for="cover-3">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\FinanceClubIITPLogo.webp"
-                />
-                <figcaption class="album-name">
-                  Finance Club<br>
-                  <a href="https://stc.iitp.ac.in/finance.html" class="learn-more hidden" id="link3"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-4" />
-          <li class="coverflow-item">
-            <label for="cover-4">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\ChESSxLogo.webp"
-                />
-                <figcaption class="album-name">
-                  ChESSx<br>
-                  <a href="https://stc.iitp.ac.in/chessx.html" class="learn-more hidden" id="link4"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-5" />
-          <li class="coverflow-item">
-            <label for="cover-5">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\APCIITPatnalogo.webp"
-                />
-                <figcaption class="album-name">
-                  APC<br>
-                  <a href="https://stc.iitp.ac.in/apclub.html" class="learn-more hidden" id="link5"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-6" />
-          <li class="coverflow-item">
-            <label for="cover-6">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\ACElogo.webp"
-                />
-                <figcaption class="album-name">
-                  ACE<br>
-                  <a href="https://stc.iitp.ac.in/ace.html" class="learn-more link1 hidden" id="link6"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-7" />
-          <li class="coverflow-item">
-            <label for="cover-7">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\Mateslogo.webp"
-                />
-                <figcaption class="album-name">
-                  MaTES<br>
-                  <a href="https://stc.iitp.ac.in/mates.html" class="learn-more hidden" id="link7"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-8" />
-          <li class="coverflow-item">
-            <label for="cover-8">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\sparkonicsLogo.webp"
-                />
-                <figcaption class="album-name">
-                  Sparkonics<br>
-                  <a href="https://stc.iitp.ac.in/sparkonics.html" class="learn-more hidden" id="link8"
-                  target="_parent" >Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-9" />
-          <li class="coverflow-item">
-            <label for="cover-9">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\SCMELogo.webp"
-                />
-                <figcaption class="album-name">
-                  SCME<br>
-                  <a href="https://stc.iitp.ac.in/scme.html" class="learn-more hidden" id="link9"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-10" />
-          <li class="coverflow-item">
-            <label for="cover-10">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\RnALogo.webp"
-                />
-                <figcaption class="album-name">
-                  RnA<br>
-                  <a href="https://stc.iitp.ac.in/rnaclub.html" class="learn-more hidden" id="link10"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <!-- Cover item -->
-          <input type="radio" name="cover-item" id="cover-11" />
-          <li class="coverflow-item">
-            <label for="cover-11">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\MoodBoard.webp"
-                />
-                <figcaption class="album-name">
-                  MoodBoard<br>
-                  <a href="https://www.instagram.com/designclub.iitp/" class="learn-more hidden" id="link11"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-          <input type="radio" name="cover-item" id="cover-12" />
-          <li class="coverflow-item">
-            <label for="cover-12">
-              <figure class="album-cover">
-                <img
-                  src="../img\clublogos\supra.webp"
-                />
-                <figcaption class="album-name">
-                  Supra<br>
-                  <a href="https://www.instagram.com/iitp_motorsports_/" class="learn-more hidden" id="link12"
-                  target="_parent">Learn More</a>
-                </figcaption>
-              </figure>
-            </label>
-          </li>
-        </ol>
+    <body>
+      <div class="main-container-hosca">
+        <h1 class="club_text" style="text-align: center; color: #292929">
+          STC Clubs
+        </h1>
+        <!--<div class="line1"></div>-->
       </div>
-      <!-- <div class="controls">
-        <label for="cover-1">1</label>
-        <label for="cover-2">2</label>
-        <label for="cover-3">3</label>
-        <label for="cover-4">4</label>
-        <label for="cover-5">5</label>
-        <label for="cover-6">6</label>
-        <label for="cover-7">7</label>
-        <label for="cover-8">8</label>
-        <label for="cover-9">9</label>
-        <label for="cover-10">10</label>
-      </div> -->
-    </div>
-    <script>
-      var buttons = document.getElementsByClassName("album-cover")
-      Array.from(buttons).forEach((button, index) => {
-        button.addEventListener("click", () => {
-          document.getElementById(`link1`).classList.add("hidden")
-          document.getElementById(`link2`).classList.add("hidden")
-          document.getElementById(`link3`).classList.add("hidden")
-          document.getElementById(`link4`).classList.add("hidden")
-          document.getElementById(`link5`).classList.add("hidden")
-          document.getElementById(`link6`).classList.add("hidden")
-          document.getElementById(`link7`).classList.add("hidden")
-          document.getElementById(`link8`).classList.add("hidden")
-          document.getElementById(`link9`).classList.add("hidden")
-          document.getElementById(`link10`).classList.add("hidden")
-          document.getElementById(`link11`).classList.add("hidden")
-          document.getElementById(`link12`).classList.add("hidden")
-          document.getElementById(`link${index+1}`).classList.remove("hidden")
-        });
-      })
-    </script>
-  </body>
+  
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/ACElogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup1">ACE</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/APCIITPatnalogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup2">APC</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/ChESSxLogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup3">ChESSx</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/FinanceClubIITPLogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup4">Finance Club</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/Mateslogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup5">MatES</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/NJACKLogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup6">NJACK</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/RnALogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup7">RnA</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/SCMELogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup8">SCME</a>
+              </div>
+              
+            </div>
+  
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/sparkonicsLogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup9">Sparkonics</a>
+              </div>
+              
+            </div>
+
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/supra.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup10">SUPRA</a>
+              </div>
+              
+            </div>
+
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/TinkersLogo.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup11">Tinkerer's Lab</a>
+              </div>
+              
+            </div>
+
+            <div class="card swiper-slide">
+  
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="../img/clublogos/MoodBoard.webp" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <a class="button" href="#popup12">MoodBoard</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>ACE</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h2>APC</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <h2>ChESSx</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup4" class="overlay">
+        <div class="popup">
+          <h2>Finance Club</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup5" class="overlay">
+        <div class="popup">
+          <h2>MatES</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup6" class="overlay">
+        <div class="popup">
+          <h2>NJACK</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup7" class="overlay">
+        <div class="popup">
+          <h2>RnA</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup8" class="overlay">
+        <div class="popup">
+          <h2>SCME</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+      <div id="popup9" class="overlay">
+        <div class="popup">
+          <h2>Sparkonics</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+
+      <div id="popup10" class="overlay">
+        <div class="popup">
+          <h2>SUPRA</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+
+      <div id="popup11" class="overlay">
+        <div class="popup">
+          <h2>Tinkerer's Lab</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+
+      <div id="popup12" class="overlay">
+        <div class="popup">
+          <h2>MoodBoard</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <p>
+              Are you fascinated by the world of electrical and electronics
+              engineering? Do you have a burning desire to explore the core concepts
+              and unleash your creativity in this dynamic field? Look no further!
+              Sparkonics is a vibrant team of passionate individuals dedicated to
+              making electrical and electronics projects and inspiring students like
+              you to dive into this exciting arena. At Sparkonics, our main aim is
+              to foster a genuine interest and enthusiasm for electrical engineering
+              among students. We believe that hands-on projects are the key to
+              unlocking your potential and igniting your passion for this field.
+            </p> 
+          </div>
+        </div>
+      </div>
+  
+    </body>
+  
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+  
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </html>
