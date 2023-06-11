@@ -195,15 +195,19 @@ CSS for learn more
 }
 body{
   margin-top: 50px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #F4F7FE;
 }
 
 .main-container-hosca {
-  margin-left: 330px;
+  /*margin-left: 330px;*/
+  display: flex;
   max-width: 660px;
+  justify-content: center;
   }
   
   
@@ -227,6 +231,7 @@ body{
   }
 
 .slide-container{
+  margin-top: 500px;
   z-index: auto;
   max-width: 1300px;
   width: 100%;
@@ -248,6 +253,17 @@ body{
   height: 250px;
   width: 80px;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .social{
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .image-content,
@@ -257,6 +273,16 @@ body{
   align-items: center;
   padding: 10px 14px;
 }
+
+.non-social{
+  transform: translateY(0);
+  transition: 0.5s;
+}
+.card:hover .non-social{
+  transform: scale(0.8) translateY(-10%);
+  opacity: 0.8;
+}
+
 .image-content{
   position: relative;
   row-gap: 5px;
@@ -325,7 +351,7 @@ transform-origin: bottom left;
 }
 
 .popup {
-  margin: 80px auto;
+  margin: 130px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -368,6 +394,45 @@ transform-origin: bottom left;
   max-height: 30%;
   overflow: auto;
   text-align: justify;
+  font-size: 15px;
+}
+
+.social{
+  align-items: center;
+  gap: 0.9rem;
+  display: flex;
+  bottom: 3px;
+  position: absolute;
+  visibility: hidden;
+  transform: translateY(90%);
+  transition: all 0.5s ease 0s;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: black;
+}
+.fa-linkedin {
+  color: black;
+}
+.fa-instagram {
+  color: black;
 }
 
 
@@ -397,13 +462,17 @@ transform-origin: bottom left;
   background-color: #4070F4;
 }
 
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
+@media screen and (max-width: 950px) {
+  body{
+    margin-left: 0;
   }
 
-  .club_text{
-    padding: 0;
+ 
+    .club_text{
+      font-size: 40px;
+    }
+
 }
+@media screen and (max-width: 730px) {
   
 }
