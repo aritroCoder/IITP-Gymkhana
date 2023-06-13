@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .main-container-hosca {
   /*margin-left: 330px;*/
   display: flex;
@@ -8,10 +9,12 @@
       padding: 0 20px;
       margin-bottom: 30px;
       font-weight: 700;
-      font-size: 50px;
+      font-size: 37px;
       color: #292929;
-      background-color: #06D85F;
       text-align: center;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: underline;
+      text-decoration-color: #435AA8;
   }
   
   .line1{
