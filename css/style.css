@@ -29,7 +29,7 @@ h6 {
 
 h1 {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 h1 span {
@@ -1649,13 +1649,12 @@ footer .container .row{
 /*----------------------------------------*/
 
 .page-header-section {
-    height: 445px;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .page-header-section .header-title {
-    font-size: 82px;
-    color: #fff;
+    font-size: 40px;
+    color: #000;
 }
 
 .page-header-section .header-title span {
