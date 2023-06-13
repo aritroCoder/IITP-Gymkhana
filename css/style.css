@@ -1313,7 +1313,7 @@ footer {
 }
 
 .container {
-    background-color: transparent;
+    background-color: #f4f7fe;
     display: flex;
     max-width: 1370px;
     flex-direction: column;
