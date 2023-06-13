@@ -2777,9 +2777,6 @@ footer .container .row{
 /* small mobile :320px. */
 
 @media only screen and (max-width: 479px) {
-    .logo-area {
-        padding: 10px 15px 15px;
-    }
     .header-area {
         /* background: #121212; */
         padding-right: 66px;
