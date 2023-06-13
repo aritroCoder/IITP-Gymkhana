@@ -205,7 +205,7 @@ transform-origin: bottom left;
   gap: 0.9rem;
   display: flex;
   bottom: 3px;
-  margin-left: 50px;
+  margin-left: calc((100% - 150px - 1.8rem) / 2);
   position: absolute;
   visibility: hidden;
   transform: translateY(90%);
