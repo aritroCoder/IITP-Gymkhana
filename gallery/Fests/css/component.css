@@ -93,7 +93,7 @@
 /* Navigation dots */
 .photostack nav {
 	position: absolute;
-	bottom: 30px;
+	bottom: 120px;
 	z-index: 99999;
 	text-align: center;
 	-webkit-transition: opacity 0.3s;
