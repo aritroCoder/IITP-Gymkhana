@@ -281,7 +281,6 @@
 						col[ j ] = { x : xVal + olx, y : yVal + oly };
 					}
 				}
-				console.log(grid)
 				// shuffle
 				grid = shuffleMArray(grid);
 
