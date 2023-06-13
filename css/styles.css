@@ -31,7 +31,7 @@
   background-color: #F4F7FE;
   position: absolute;
 }
-.slide-content-carousel{
+.slide-content-carousel, .slide-content-carousel2, .slide-content-carousel3{
   z-index: auto;
   position: sticky;
   margin: 0 40px;
