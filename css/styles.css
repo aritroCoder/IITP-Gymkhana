@@ -159,6 +159,8 @@ transform-origin: bottom left;
   position: relative;
   transition: all 5s ease-in-out;
   min-width: 350px;
+  max-height: 450px;
+  overflow: auto;
 }
 
 .popup .close {
@@ -203,16 +205,25 @@ transform-origin: bottom left;
   gap: 0.9rem;
   display: flex;
   bottom: 3px;
-  margin-left: 20px;
+  margin-left: 50px;
   position: absolute;
   visibility: hidden;
   transform: translateY(90%);
   transition: all 0.5s ease 0s;
 }
 
+.social-modal{
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  display: flex;
+  bottom: 3px;
+  transition: all 0.5s ease 0s;
+}
+
 /* Style all font awesome icons */
 .fa {
-  padding: 15px;
+  padding: 5px;
   font-size: 25px;
   width: 50px;
   text-align: center;
