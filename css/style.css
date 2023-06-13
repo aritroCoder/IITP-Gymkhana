@@ -472,6 +472,9 @@ ol {
 /*  Header CSS
 /*----------------------------------------*/
 
+html , body{
+    overflow: visible;
+}
 
 .header-area {
     position:fixed;
@@ -1304,11 +1307,14 @@ footer {
     background-image: url("../img/bggg.jpg");
     background-position: center bottom;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
     background-color: transparent;
     display: flex;
+    max-width: 1370px;
     flex-direction: column;
     padding-top: 20px;
     letter-spacing: 1px;
@@ -1316,15 +1322,19 @@ footer {
     line-height: 16px;
     margin: auto;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 0px;
 }
 
 .container .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .brief-info.col-lg-4.col-md-12.col-sm-12{
-    max-width: 28vw;
+    max-width: 30%;
     text-align: justify;
     padding-top: 30px;
     font-weight: 300;
@@ -1332,7 +1342,7 @@ footer {
 
 .copyright-text.row {
     font-size: 14px;
-    padding-top: 20px;
+    padding: 20px 0;
     top: 10px;
     margin-top: 20px ;
     /* border-top: 2px solid #FFFFFF; */
@@ -1343,11 +1353,11 @@ footer {
 }
 
 .link-section.row.col-lg-4.col-md-12.col-sm-12{
-    max-width: 10vw;
+    max-width: 20%;
 }
 
 .links.col-lg-6.col-md-6.col-sm-6.col-xs-6{
-    min-width: 13vw;
+    min-width: 90%;
     letter-spacing: 2px;
 }
 
@@ -1365,7 +1375,7 @@ footer {
 
 .col-lg-4.col-md-12.col-sm-12.col-xs-12{
     padding-top: 45px;
-    max-width: 20vw;
+    max-width: 25%;
     letter-spacing: 2px;
 }
 footer li {
@@ -1428,6 +1438,48 @@ footer .link-section .links ul li a{
     font-weight: 400;
 }
 
+/* resposive */
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container .row{
+        flex-direction: column;
+    }
+    .brief-info.col-lg-4.col-md-12.col-sm-12{
+        max-width: 90vw;
+    }
+    footer p{
+        width: 80vw;
+    }
+    .link-section.row.col-lg-4.col-md-12.col-sm-12{
+        max-width: 100%;
+    }
+    .links.col-lg-6.col-md-6.col-sm-6.col-xs-6{
+        max-width: 100%;
+    }
+    .col-lg-4.col-md-12.col-sm-12.col-xs-12{
+        max-width: 100%;
+    }
+    #map iframe{
+        width: 100%;
+    }
+    .social-icons{
+        margin: 40px 0px;
+    }
+    .credits.col-sm-12{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .credits.credits.col-sm-12 .credits-N-M{
+        padding: 70px;
+    }
+
+}
+
+/* responsive end */
 /* footer social icons */
 
 .social-icons{
