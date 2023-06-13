@@ -136,11 +136,15 @@ transform-origin: bottom left;
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  /* display: flex;
+  justify-content: center; */
 }
+
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
-  z-index: 3;
+  z-index: 12;
 }
 
 .popup {
@@ -151,6 +155,7 @@ transform-origin: bottom left;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  min-width: 350px;
 }
 
 .popup .close {
@@ -267,6 +272,9 @@ transform-origin: bottom left;
     }
 
 }
-@media screen and (max-width: 730px) {
-  
+@media screen and (max-width: 430px) {
+  .overlay{
+    display: flex;
+    align-items: center;
+  }
 }
