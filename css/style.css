@@ -5,10 +5,13 @@
  ------------------------------------ 
  ====================================*/
 
+ /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
  :root {
     --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-primary: "Inter", sans-serif;
-    --font-secondary: "Cardo", sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
 }
 
 
@@ -2233,7 +2236,7 @@ ul.social-network li {
 /*  Portfolio page CSS
 /*----------------------------------------*/
 
-.portfolio-filter {
+/* .portfolio-filter {
     list-style: none;
 }
 
@@ -2250,7 +2253,59 @@ ul.social-network li {
     text-decoration: underline;
     -webkit-text-decoration-color: #2046f2;
     text-decoration-color: #2046f2;
+} */
+
+.gallery-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 70px;
 }
+
+.portfolio-filter {
+    position: relative;
+  }
+  
+  .portfolio-filter:before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    width: 900px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #DDDDDD; /* Customize the color of the line */
+    box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 22%);
+  }
+  
+  .portfolio-filter li {
+    display: inline-block;
+    font-size: x-large;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    color: #909090;
+  }
+
+  .portfolio-filter li.active{
+    color: #00A56A;
+  }
+  
+  .portfolio-filter li.active:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #00A56A; /* Customize the color of the active bar */
+  }
+  
+  .filter-menu{
+    width: 100%;
+  }
 
 .portfolio-warp {
     display: block;
@@ -2258,8 +2313,10 @@ ul.social-network li {
 }
 
 .portfolio-warp .grid-item {
-    width: 20%;
+    width: 19%;
+    height: 250px !important;
     background-position: center;
+    margin-bottom: 1%;
 }
 
 .portfolio-warp .grid-item:after {
@@ -2270,14 +2327,15 @@ ul.social-network li {
 
 .portfolio-warp .grid-item.grid-wide,
 .portfolio-warp .grid-item.grid-long {
-    width: 40%;
+    width: 39%;
+    height: 513px !important;
 }
 
 .portfolio-warp .grid-item a {
     width: 100%;
     height: 100%;
     display: block;
-    background: rgba(67, 91, 168, 0.55);
+    background: rgba(53, 53, 53, 0.70);
     opacity: 0;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -2286,7 +2344,7 @@ ul.social-network li {
 
 .portfolio-warp .grid-item a:after {
     position: absolute;
-    content: "+";
+    content: url("../img/plus.png");
     left: 50%;
     top: 60%;
     width: 48px;

@@ -1,239 +1,1781 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>IIT-P Gymkhana</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Arcade - Architecture Template" />
+    <meta
+      name="keywords"
+      content="arcade, architecture, onepage, creative, html"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
 
-<head>
-  <title>IIT-P Gymkhana</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Arcade - Architecture Template" />
-  <meta name="keywords" content="arcade, architecture, onepage, creative, html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="shortcut icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6d80484088.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/6d80484088.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="stylesheet" href="css/owl.carousel.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="fest-carousel/carousel.css" />
-  <link rel="stylesheet" href="socities-carousel/carousel.css" />
+    <link rel="stylesheet" href="fest-carousel/carousel.css" />
+    <link rel="stylesheet" href="socities-carousel/carousel.css" />
 
-  <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+  </head>
 
-<body>
-  <!-- Page Preloder -->
-  <div id="preloder">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Header section start -->
-  <header class="header-area" id="navbar">
-    <a href="index.html" class="logo-area">
-      <img src="img/logo.png" alt="" />
-    </a>
-    <div class="nav-switch">
-      <i class="fa fa-bars"></i>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
     </div>
-    <!-- <div class="phone-number">+675 334 567 223</div> -->
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#about">ABOUT US</a></li>
-        <li><a href="index.html#clubs">CLUBS</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="index.html#festgallery">EVENTS</a></li>
-        <li><a href="element.html">FAQ</a></li>
-        <li><a href="teams.html">OFFICE BEARERS</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Header section end -->
 
-  <!-- Hero section start -->
-  <section class="hero-section">
-    <div id="hero">
-      <video loop muted autoplay preload="auto">
-        <source src="img/Drone_Shot.mp4" type="video/mp4">
-      </video>
-      <div class="caption">
-        <h1>Students' Gymkhana, IIT Patna</h1>
-        <h2>
-          The Students' Gymkhana of IIT Patna (established in 2008) is the governing council of students consisting of
-          the elected student representatives working for the over-all well being and holistic development of students
-          in the institute.
-        </h2>
-        <a href="#about" class="btn-get-started">Know More</a>
+    <!-- Header section start -->
+    <header class="header-area" id="navbar">
+      <a href="index.html" class="logo-area">
+        <img src="img/logo.png" alt="" />
+      </a>
+      <div class="nav-switch">
+        <i class="fa fa-bars"></i>
       </div>
+      <!-- <div class="phone-number">+675 334 567 223</div> -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about">ABOUT US</a></li>
+          <li><a href="index.html#clubs">CLUBS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="index.html#festgallery">EVENTS</a></li>
+          <li><a href="element.html">FAQ</a></li>
+          <li><a href="teams.html">OFFICE BEARERS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header section end -->
 
-    </div>
-  </section>
-  <!-- Hero section end -->
+    <!-- Hero section start -->
+    <section class="hero-section">
+      <div id="hero">
+        <video loop muted autoplay preload="auto">
+          <source src="img/Drone_Shot.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">
+          <h1>Students' Gymkhana, IIT Patna</h1>
+          <h2>
+            The Students' Gymkhana of IIT Patna (established in 2008) is the
+            governing council of students consisting of the elected student
+            representatives working for the over-all well being and holistic
+            development of students in the institute.
+          </h2>
+          <a href="#about" class="btn-get-started">Know More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
 
-  <!-- Main section start --------------------------------------------------------------->
+    <!-- Main section start --------------------------------------------------------------->
 
-  <main id="main">
-    <!-- About section start -->
-    <section id="about" class="cta-section pt100 pb50">
-      <div class="cta-image-box" style="z-index: 3"></div>
-      <div class="container" style="max-width: 1279px;">
-        <div class="row">
-          <div class="col-lg-7 pl-lg-0 offset-lg-7 cta-content" style="flex: auto;">
-            <h2 class="sp-title" style="font-size: 50px;"><span>About</span> Student's Gymkhana</h2>
-            <p>
-              The Students' Gymkhana at IIT Patna is a dynamic council that leads the charge in promoting leadership,
-              talent, and co-curricular activities among students. With elected representatives from each hostel, the
-              Gymkhana coordinates various events and activities to bring out the best in every student.
-              <br>
-              Sports and cultural events are a cornerstone of campus life, and the Gymkhana is at the forefront of
-              organizing inter-hostel and inter-department competitions that bring out healthy competition, relaxation,
-              and camaraderie among participants. The blending of different cultures adds a unique character to the
-              cultural events organized throughout the year.
-              <br>
-              To make learning an enjoyable experience, the Gymkhana organizes workshops, seminars, and technical
-              activities. The various clubs and groups at IIT Patna come together to organize the big fests, such as
-              ANWESHA, INFINITO, CELESTA, REVERBERANCE, etc. These fests are a testament to the creativity and talent of
-              the students and have become an integral part of the IITP legacy.
-              <br><br>
-              In short, the Students' Gymkhana of IIT Patna is a vital force that shapes the holistic development of
-              students and creates a vibrant and inclusive community of future leaders. Its efforts have helped to
-              create an environment where students can thrive and reach their full potential, both academically and
-              personally.
-            </p>
-            <div class="cta-icons">
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/light/1.png" alt="" />
-              </div>
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/light/2.png" alt="" />
-              </div>
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/color/3.png" alt="" />
+    <main id="main">
+      <!-- About section start -->
+      <section id="about" class="cta-section pt100 pb50">
+        <div class="cta-image-box" style="z-index: 3"></div>
+        <div class="container" style="max-width: 1279px">
+          <div class="row">
+            <div
+              class="col-lg-7 pl-lg-0 offset-lg-7 cta-content"
+              style="flex: auto"
+            >
+              <h2 class="sp-title" style="font-size: 50px">
+                <span>About</span> Student's Gymkhana
+              </h2>
+              <p>
+                The Students' Gymkhana at IIT Patna is a dynamic council that
+                leads the charge in promoting leadership, talent, and
+                co-curricular activities among students. With elected
+                representatives from each hostel, the Gymkhana coordinates
+                various events and activities to bring out the best in every
+                student.
+                <br />
+                Sports and cultural events are a cornerstone of campus life, and
+                the Gymkhana is at the forefront of organizing inter-hostel and
+                inter-department competitions that bring out healthy
+                competition, relaxation, and camaraderie among participants. The
+                blending of different cultures adds a unique character to the
+                cultural events organized throughout the year.
+                <br />
+                To make learning an enjoyable experience, the Gymkhana organizes
+                workshops, seminars, and technical activities. The various clubs
+                and groups at IIT Patna come together to organize the big fests,
+                such as ANWESHA, INFINITO, CELESTA, REVERBERANCE, etc. These
+                fests are a testament to the creativity and talent of the
+                students and have become an integral part of the IITP legacy.
+                <br /><br />
+                In short, the Students' Gymkhana of IIT Patna is a vital force
+                that shapes the holistic development of students and creates a
+                vibrant and inclusive community of future leaders. Its efforts
+                have helped to create an environment where students can thrive
+                and reach their full potential, both academically and
+                personally.
+              </p>
+              <div class="cta-icons">
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/light/1.png" alt="" />
+                </div>
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/light/2.png" alt="" />
+                </div>
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/color/3.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- About section end -->
+      </section>
+      <!-- About section end -->
 
-    <!-- Clubs section start -->
-    <section id="clubs">
-      <div>
-        <div class="our-clubs_carousel spad" style="background-color: #F4F7FE;margin-bottom: 0">
-          <iframe loading="lazy" class="carousel" src="club-carousel/societies.html" width="100%" height="600"
-            frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        <div class="our-clubs_carousel spad" style="background-color: #F4F7FE;margin-bottom: 0">
-          <iframe loading="lazy" class="carousel" src="club-carousel/hosca_clubs.html" width="100%" height="600"
-            frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <a href="https://www.iitp.ac.in/hosca/" class="btn-get-started">Know More</a>
-        </div>
-        <div class="our-clubs_carousel" style="background-color: #F4F7FE;margin-bottom: 0">
-          <iframe loading="lazy" class="carousel" src="club-carousel/stc_clubs.html" width="100%" height="600"
-            frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <a href="https://stc.iitp.ac.in/" class="btn-get-started">Know More</a>
-        </div>
-
-      </div>
-    </section>
-    <!-- Clubs section end -->
-
-    <!-- Gallery section start -->
-    <section id="gallery" class="cta-section pt100 pb50">
-      <div class="gallery-section-image-box" style="z-index: 3"></div>
-      <div class="container" style="max-width: 1279px;">
-        <div class="row">
-          <div class="col-lg-7 pl-lg-0 offset-lg-7 cta-content" style="flex: auto;">
-            <h2 class="sp-title">Gallery of <span>IITP</span></h2>
-            <p>
-              Experience the amazing world of IIT Patna's gallery, showcasing stunning artwork and captivating
-              photographs created by our talented students and faculty. With constantly changing exhibitions and events,
-              there's always something new to discover. Connect with like-minded individuals at our workshops and talks
-              and explore your own creativity. Come and immerse yourself in the magic of art!
-            </p>
-            <div class="cta-icons">
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/light/1.png" alt="" />
+      <!-- Clubs section start -->
+      <section id="clubs">
+        <div>
+          <div
+            class="our-clubs_carousel spad"
+            style="background-color: #f4f7fe; margin-bottom: 0"
+          >
+            <div style="width: 100%; height: 300px;">
+              <!--Header-->
+              <div class="main-container-hosca">
+                <h1
+                  class="club_text"
+                  style="text-align: center; color: #292929"
+                >
+                  HOSCA Clubs
+                </h1>
+                <!--<div class="line1"></div>-->
               </div>
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/light/2.png" alt="" />
+
+              <div class="slide-container swiper">
+                <div class="slide-content-carousel">
+                  <div class="card-wrapper swiper-wrapper">
+                    <!--Card 1-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hoot.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup1">HOOT</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/yavanika.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup2">Yavanika</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/quiz.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup3">Quiz Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/syahi.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup4">Syahi</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 5-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Pixxel.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup5">Pixxel</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 6-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/anime.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup6">Anime Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 7-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Vincetroke.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup7">Vincetroke</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 8-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/aria.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup8">Aria</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 9-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/exousia.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup9">Exousia</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 10-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hexa.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup10">Hexachrome</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="cta-img-icon">
-                <img loading="lazy" src="img/icon/color/3.png" alt="" />
+
+              <!--About HOOT-->
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                  <h2>HOOT</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      “There is nothing like Oratory, it can turn a commoner
+                      into a king.”<br />The House of Oratory Talents,
+                      endearingly called <b>HOOT</b>, is the official speaking
+                      arts society of IIT Patna. We aim to provide an accessible
+                      and dynamic platform where the art of effective
+                      communication takes flight. As the beacon of eloquence and
+                      persuasion, Hoot empowers individuals to refine their
+                      public speaking skills, articulate their ideas, and
+                      captivate audiences with their words. Within the nurturing
+                      environment of Hoot, members engage in thought-provoking
+                      debates, enthralling extempore sessions, and engaging
+                      storytelling activities. Through regular workshops and
+                      constructive feedback, Hoot cultivates confident speakers
+                      who can inspire, influence, and lead. Join Hoot and unlock
+                      the power of oratory excellence, where every word
+                      catalyses change.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About YAVANIKA-->
+              <div id="popup2" class="overlay">
+                <div class="popup">
+                  <h2>Yavanika</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About QUIZ CLUB-->
+              <div id="popup3" class="overlay">
+                <div class="popup">
+                  <h2>Quiz Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About SYAHI-->
+              <div id="popup4" class="overlay">
+                <div class="popup">
+                  <h2>Syahi</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About PIXXEL-->
+              <div id="popup5" class="overlay">
+                <div class="popup">
+                  <h2>Pixxel</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Anime Club-->
+              <div id="popup6" class="overlay">
+                <div class="popup">
+                  <h2>Anime Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Vincetroke-->
+              <div id="popup7" class="overlay">
+                <div class="popup">
+                  <h2>Vincetroke</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Aria-->
+              <div id="popup8" class="overlay">
+                <div class="popup">
+                  <h2>Aria</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About EXousia-->
+              <div id="popup9" class="overlay">
+                <div class="popup">
+                  <h2>Exousia</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About HEXACHROME-->
+              <div id="popup10" class="overlay">
+                <div class="popup">
+                  <h2>Hexachrome</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="our-clubs_carousel spad"
+            style="background-color: #f4f7fe; margin-bottom: 0"
+          >
+            <div style="width: 100%; height: 300px;">
+              <!--Header-->
+              <div class="main-container-hosca">
+                <h1
+                  class="club_text"
+                  style="text-align: center; color: #292929"
+                >
+                  HOSCA Clubs
+                </h1>
+                <!--<div class="line1"></div>-->
+              </div>
+
+              <div class="slide-container swiper">
+                <div class="slide-content-carousel">
+                  <div class="card-wrapper swiper-wrapper">
+                    <!--Card 1-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hoot.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup1">HOOT</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/yavanika.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup2">Yavanika</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/quiz.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup3">Quiz Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/syahi.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup4">Syahi</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 5-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Pixxel.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup5">Pixxel</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 6-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/anime.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup6">Anime Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 7-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Vincetroke.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup7">Vincetroke</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 8-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/aria.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup8">Aria</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 9-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/exousia.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup9">Exousia</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 10-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hexa.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup10">Hexachrome</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!--About HOOT-->
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                  <h2>HOOT</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      “There is nothing like Oratory, it can turn a commoner
+                      into a king.”<br />The House of Oratory Talents,
+                      endearingly called <b>HOOT</b>, is the official speaking
+                      arts society of IIT Patna. We aim to provide an accessible
+                      and dynamic platform where the art of effective
+                      communication takes flight. As the beacon of eloquence and
+                      persuasion, Hoot empowers individuals to refine their
+                      public speaking skills, articulate their ideas, and
+                      captivate audiences with their words. Within the nurturing
+                      environment of Hoot, members engage in thought-provoking
+                      debates, enthralling extempore sessions, and engaging
+                      storytelling activities. Through regular workshops and
+                      constructive feedback, Hoot cultivates confident speakers
+                      who can inspire, influence, and lead. Join Hoot and unlock
+                      the power of oratory excellence, where every word
+                      catalyses change.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About YAVANIKA-->
+              <div id="popup2" class="overlay">
+                <div class="popup">
+                  <h2>Yavanika</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About QUIZ CLUB-->
+              <div id="popup3" class="overlay">
+                <div class="popup">
+                  <h2>Quiz Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About SYAHI-->
+              <div id="popup4" class="overlay">
+                <div class="popup">
+                  <h2>Syahi</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About PIXXEL-->
+              <div id="popup5" class="overlay">
+                <div class="popup">
+                  <h2>Pixxel</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Anime Club-->
+              <div id="popup6" class="overlay">
+                <div class="popup">
+                  <h2>Anime Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Vincetroke-->
+              <div id="popup7" class="overlay">
+                <div class="popup">
+                  <h2>Vincetroke</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Aria-->
+              <div id="popup8" class="overlay">
+                <div class="popup">
+                  <h2>Aria</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About EXousia-->
+              <div id="popup9" class="overlay">
+                <div class="popup">
+                  <h2>Exousia</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About HEXACHROME-->
+              <div id="popup10" class="overlay">
+                <div class="popup">
+                  <h2>Hexachrome</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://www.iitp.ac.in/hosca/" class="btn-get-started"
+              >Know More</a
+            >
+          </div>
+          <div
+            class="our-clubs_carousel spad"
+            style="background-color: #f4f7fe; margin-bottom: 0"
+          >
+            <div style="width: 100%; height: 300px;">
+              <!--Header-->
+              <div class="main-container-hosca">
+                <h1
+                  class="club_text"
+                  style="text-align: center; color: #292929"
+                >
+                  HOSCA Clubs
+                </h1>
+                <!--<div class="line1"></div>-->
+              </div>
+
+              <div class="slide-container swiper">
+                <div class="slide-content-carousel">
+                  <div class="card-wrapper swiper-wrapper">
+                    <!--Card 1-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hoot.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup1">HOOT</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/yavanika.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup2">Yavanika</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/quiz.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup3">Quiz Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 4-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/syahi.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup4">Syahi</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 5-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Pixxel.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup5">Pixxel</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 6-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/anime.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup6">Anime Club</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 7-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/Vincetroke.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup7">Vincetroke</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 8-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/aria.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup8">Aria</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 9-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/exousia.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup9">Exousia</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+
+                    <!--Card 10-->
+                    <div class="card swiper-slide">
+                      <div class="non-social">
+                        <div class="image-content">
+                          <div class="card-image">
+                            <img
+                              src="img/clublogos/hexa.webp"
+                              alt=""
+                              class="card-img"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <a class="button" href="#popup10">Hexachrome</a>
+                        </div>
+                      </div>
+
+                      <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!--About HOOT-->
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                  <h2>HOOT</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      “There is nothing like Oratory, it can turn a commoner
+                      into a king.”<br />The House of Oratory Talents,
+                      endearingly called <b>HOOT</b>, is the official speaking
+                      arts society of IIT Patna. We aim to provide an accessible
+                      and dynamic platform where the art of effective
+                      communication takes flight. As the beacon of eloquence and
+                      persuasion, Hoot empowers individuals to refine their
+                      public speaking skills, articulate their ideas, and
+                      captivate audiences with their words. Within the nurturing
+                      environment of Hoot, members engage in thought-provoking
+                      debates, enthralling extempore sessions, and engaging
+                      storytelling activities. Through regular workshops and
+                      constructive feedback, Hoot cultivates confident speakers
+                      who can inspire, influence, and lead. Join Hoot and unlock
+                      the power of oratory excellence, where every word
+                      catalyses change.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About YAVANIKA-->
+              <div id="popup2" class="overlay">
+                <div class="popup">
+                  <h2>Yavanika</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About QUIZ CLUB-->
+              <div id="popup3" class="overlay">
+                <div class="popup">
+                  <h2>Quiz Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About SYAHI-->
+              <div id="popup4" class="overlay">
+                <div class="popup">
+                  <h2>Syahi</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About PIXXEL-->
+              <div id="popup5" class="overlay">
+                <div class="popup">
+                  <h2>Pixxel</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Anime Club-->
+              <div id="popup6" class="overlay">
+                <div class="popup">
+                  <h2>Anime Club</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Vincetroke-->
+              <div id="popup7" class="overlay">
+                <div class="popup">
+                  <h2>Vincetroke</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About Aria-->
+              <div id="popup8" class="overlay">
+                <div class="popup">
+                  <h2>Aria</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About EXousia-->
+              <div id="popup9" class="overlay">
+                <div class="popup">
+                  <h2>Exousia</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--About HEXACHROME-->
+              <div id="popup10" class="overlay">
+                <div class="popup">
+                  <h2>Hexachrome</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    <p>
+                      Are you fascinated by the world of electrical and
+                      electronics engineering? Do you have a burning desire to
+                      explore the core concepts and unleash your creativity in
+                      this dynamic field? Look no further! Sparkonics is a
+                      vibrant team of passionate individuals dedicated to making
+                      electrical and electronics projects and inspiring students
+                      like you to dive into this exciting arena. At Sparkonics,
+                      our main aim is to foster a genuine interest and
+                      enthusiasm for electrical engineering among students. We
+                      believe that hands-on projects are the key to unlocking
+                      your potential and igniting your passion for this field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://stc.iitp.ac.in/" class="btn-get-started"
+              >Know More</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Clubs section end -->
+
+      <!-- Gallery section start -->
+      <section id="gallery" class="cta-section pt100 pb50">
+        <div class="gallery-section-image-box" style="z-index: 3"></div>
+        <div class="container" style="max-width: 1279px">
+          <div class="row">
+            <div
+              class="col-lg-7 pl-lg-0 offset-lg-7 cta-content"
+              style="flex: auto"
+            >
+              <h2 class="sp-title">Gallery of <span>IITP</span></h2>
+              <p>
+                Experience the amazing world of IIT Patna's gallery, showcasing
+                stunning artwork and captivating photographs created by our
+                talented students and faculty. With constantly changing
+                exhibitions and events, there's always something new to
+                discover. Connect with like-minded individuals at our workshops
+                and talks and explore your own creativity. Come and immerse
+                yourself in the magic of art!
+              </p>
+              <div class="cta-icons">
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/light/1.png" alt="" />
+                </div>
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/light/2.png" alt="" />
+                </div>
+                <div class="cta-img-icon">
+                  <img loading="lazy" src="img/icon/color/3.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Gallery section end -->
-    <br /><br />
+      </section>
+      <!-- Gallery section end -->
+      <br /><br />
 
+      <!-- Fests gallery start-->
+      <section id="festgallery" style="margin-top: 50px">
+        <iframe
+          loading="lazy"
+          src="gallery/Fests/index.html"
+          height="750px"
+          width="100%"
+          title="Gallery-gymkhana"
+        ></iframe>
+      </section>
+      <!-- Fests gallery section end -->
+    </main>
+    <!-- Main section ends --------------------------------------------------------------->
 
-
-    <!-- Fests gallery start-->
-    <section id="festgallery" style="margin-top: 50px">
-
-      <iframe loading="lazy" src="gallery/Fests/index.html" height="750px" width="100%"
-        title="Gallery-gymkhana"></iframe>
-
-    </section>
-    <!-- Fests gallery section end -->
-
-  </main>
-  <!-- Main section ends --------------------------------------------------------------->
-
-  <!-- Footer section start -->
-  <footer>
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="brief-info col-lg-4 col-md-12 col-sm-12">
-          <img loading="lazy" src="./img/logo.png" alt="white logo" width="200">
-          <p>
-            The Students’ Gymkhana of IIT Patna is the governing council of students consisting of the elected student
-            representatives working for the over-all well being and holistic development of students in the institute
-          </p>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="link-section row col-lg-4 col-md-12 col-sm-12">
+    <!-- Footer section start -->
+    <footer>
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
           <!--Grid column-->
-          <div class="links col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <h6 class="text-uppercase">Club Links</h6>
-            <ul class="list-unstyled mb-0">
+          <div class="brief-info col-lg-4 col-md-12 col-sm-12">
+            <img
+              loading="lazy"
+              src="./img/logo.png"
+              alt="white logo"
+              width="200"
+            />
+            <p>
+              The Students’ Gymkhana of IIT Patna is the governing council of
+              students consisting of the elected student representatives working
+              for the over-all well being and holistic development of students
+              in the institute
+            </p>
+            <h4>Follow Us!</h4>
+            <ul class="social-network social-circle">
               <li>
-                <a href="https://stc.iitp.ac.in" id="text-dark">STC</a>
+                <a
+                  href="https://www.facebook.com/gymkhana.iitp"
+                  class="fa fa-facebook"
+                  title="Facebook"
+                  ><i class="icofont-facebook"></i
+                ></a>
               </li>
               <li>
-                <a href="https://sparkonics.iitp.ac.in/" id="text-dark">Sparkonics</a>
+                <a
+                  href="https://www.instagram.com/iitpatna_gymkhana//"
+                  class="fa fa-instagram"
+                  title="Instagram"
+                  ><i class="icofont-instagram"></i
+                ></a>
               </li>
               <li>
-                <a href="https://njack.iitp.ac.in/#" id="text-dark">NJACK</a>
-              </li>
-              <li>
-                <a href="https://www.iitp.ac.in/ace/" id="text-dark">ACE</a>
-              </li>
-              <li>
-                <a href="https://stc.iitp.ac.in/chessx.html" id="text-dark">ChESSx</a>
+                <a
+                  href="https://twitter.com/stc_iitp"
+                  class="fa fa-twitter"
+                  title="Twitter"
+                  ><i class="icofont-twitter"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -266,9 +1808,11 @@
             <iframe loading="lazy"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721"
               width="250px" height="250px" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
+
           </div>
         </div>
-        <!--Grid column-->
+        <!-- Copyright -->
+        <!--Grid row-->
       </div>
       <div class="social-icons">
         <h5>Follow Us!</h5>
