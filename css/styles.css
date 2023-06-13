@@ -14,6 +14,7 @@
       text-align: center;
       font-family: 'Poppins', sans-serif;
       text-decoration: underline;
+      text-underline-offset: 8px;
       text-decoration-color: #435AA8;
   }
   
@@ -224,7 +225,7 @@ transform-origin: bottom left;
 /* Style all font awesome icons */
 .fa {
   padding: 5px;
-  font-size: 25px;
+  font-size: 17px;
   width: 50px;
   text-align: center;
   text-decoration: none;
