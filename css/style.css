@@ -1347,7 +1347,7 @@ footer {
     /* border-top: 2px solid #FFFFFF; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: left;
     color: white;
 }
 
@@ -1356,14 +1356,14 @@ footer {
 }
 
 .links.col-lg-6.col-md-6.col-sm-6.col-xs-6{
-    min-width: 90%;
+    /* min-width: 90%; */
     letter-spacing: 2px;
 }
 
 .copyright-text .credits{
     display: inline-flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: left;
 }
 
  #map h6{
@@ -1441,7 +1441,7 @@ footer .link-section .links ul li a{
 
 @media (max-width: 991px){
     footer{
-        padding: 40px;
+        padding: 0px;
     }
     footer .container .row{
         flex-direction: column;
