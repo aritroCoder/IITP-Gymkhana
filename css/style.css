@@ -2478,7 +2478,7 @@ footer .container .row{
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .logo-area {
-        padding: 20px 30px 30px;
+        padding: 10px 15px 15px;
     }
     .slide-content {
         margin-left: 170px;
@@ -2590,7 +2590,7 @@ footer .container .row{
         position: absolute;
         right: 20px;
         font-size: 30px;
-        color: #fff;
+        color: #000;
         top: 20px;
         display: block;
     }
@@ -2598,7 +2598,7 @@ footer .container .row{
         position: absolute;
         width: calc(100% - 90px);
         left: 80px;
-        background: #121212;
+        background: #f8f9fa;
         top: 100%;
         margin-top: 11px;
         display: none;
@@ -2640,7 +2640,7 @@ footer .container .row{
         position: absolute;
         right: 20px;
         font-size: 30px;
-        color: #fff;
+        color: #000;
         top: 20px;
         display: block;
     }
@@ -2648,7 +2648,7 @@ footer .container .row{
         position: absolute;
         width: calc(100% - 90px);
         left: 80px;
-        background: #121212;
+        background: #dee2e6;
         top: 100%;
         margin-top: 11px;
         display: none;
@@ -2773,12 +2773,11 @@ footer .container .row{
 
 @media only screen and (max-width: 479px) {
     .logo-area {
-        padding: 20px 30px 30px;
+        padding: 10px 15px 15px;
     }
     .header-area {
         /* background: #121212; */
         padding-right: 66px;
-        background-color: rgba(0,0,0,.2);
         backdrop-filter: blur(2rem);
         box-shadow: 0 0 1rem 0 hsl(0deg 0% 100% / 10%);
         -webkit-backdrop-filter: blur(2rem);
