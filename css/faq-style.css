@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
 
+
+
 :root{
     --font-primary: "Inter",sans-serif;
     --font-secondary: "Cardo", serif;
+}
+
+.container h1{
+    text-align: center;
 }
 
 .panel-header {
@@ -50,10 +56,11 @@
     min-height: 72px;
     margin: auto;
     text-align: center;
-    background-color: #575353;
-    color: white;
-    border-radius: 50px;
+    /* background-color: #575353; */
+    color: #909090;
+    /* border-radius: 50px; */
     margin-bottom: 36px;
+    border: none;
 }
 
 .nav-item {
@@ -72,12 +79,32 @@
     background-color: transparent !important;
     border: none !important;
     border-radius: 30px;
-    color: #a6ff00 !important;
+    color: #00A56A !important;
 }
 
 .nav-tabs .active {
     background-color: transparent !important;
     border: none !important;
     border-radius: 30px;
-    color: #a6ff00 !important;
+    color: #00A56A !important;
+}
+
+.nav-item::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 17%;
+    background-color: #DDDDDD;
+    position: absolute;
+    top: 300px;
+}
+
+.active::after{
+    content: "";
+    display: block;
+    height: 4px;
+    /* width: 17%; */
+    background-color: #000000;
+    position: absolute;
+    top: 182px;
 }

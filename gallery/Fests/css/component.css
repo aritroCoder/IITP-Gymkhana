@@ -21,6 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-inline: 50px;
 }
 
 .photostack-start {
