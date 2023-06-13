@@ -43,6 +43,12 @@
   border-radius: 25px;
 }
 
+@media screen and (max-width: 500px){
+  .slide-content-carousel, .slide-content-carousel2, .slide-content-carousel3{
+    width: 50% !important;
+  }
+}
+
 .card{
   border-radius: 15px;
   background-color: #FFF;
