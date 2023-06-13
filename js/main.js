@@ -370,7 +370,7 @@ function openCity(evt, cityName) {
 //   });
 
 $("#tile-1 .nav-tabs a").click(function() {
-  var position = $(this).parent().position();
+  var position = $(this).position();
   var width = $(this).parent().width();
     $("#tile-1 .slider").css({"left":+ position.left,"width":width});
 });
