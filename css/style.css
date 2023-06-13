@@ -1504,11 +1504,28 @@ ul.social-network {
 
 ul.social-network li {
     display: inline;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 
 /* footer social icons */
+
+footer .container{
+    flex-wrap: nowrap;
+    margin-inline: 10px;
+    /* width: 100%; */
+    width: inherit;
+    max-width: 1860px;
+}
+
+footer .container .row{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-block: 15px;
+}
+
 
 .social-network a.icoFacebook:hover {
     background-color: #3B5998;
@@ -1544,7 +1561,7 @@ ul.social-network li {
 }
 
 .social-circle li a {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     margin: 0 auto 0 auto;
     -moz-border-radius: 50%;
@@ -1555,7 +1572,12 @@ ul.social-network li {
     height: 30px;
     font-size: 20px;
     color: #202A40;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .social-circle li a:hover{
     color: #6D93ED;
@@ -2400,6 +2422,8 @@ ul.social-network li {
     background-color: #2dc997;
     border: none;
 }
+
+
 
 
 /* ===========================
