@@ -289,41 +289,44 @@ ol {
 
 .accordion-area .panel {
     margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .accordion-area .panel-header {
-    background: #f0f0f0;
+    background: #ffffff;
     display: block;
     padding: 12px 50px;
     font-size: 14px;
     font-weight: 700;
+    border-radius: 15px;
     position: relative;
     -webkit-transition: all 0.4s ease-out 0s;
     -o-transition: all 0.4s ease-out 0s;
     transition: all 0.4s ease-out 0s;
 }
 
-.accordion-area .panel-header.active {
-    background: #39ffbf;
-}
-
 .accordion-area .panel-header.active .panel-link:after {
     content: "-";
+    font-size: xx-large;
 }
 
 .accordion-area .panel-header.active .panel-link.collapsed:after {
     content: "+";
+    font-size: xx-large;
 }
 
 .accordion-area .panel-link {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     height: 100%;
     width: 50px;
-    background: #39ffbf;
     border: none;
     cursor: pointer;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .accordion-area .panel-body p {
@@ -333,7 +336,7 @@ ol {
 }
 
 .accordion-area .panel-body {
-    padding: 0 5px;
+    padding: 0 45px;
 }
 
 .accordion-area .panel-link:after {
@@ -346,6 +349,7 @@ ol {
     line-height: 16px;
     margin-top: -8px;
     margin-left: -4px;
+    font-size: xx-large;
 }
 
 

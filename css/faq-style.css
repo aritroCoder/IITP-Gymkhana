@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
 
+
+
 :root{
     --font-primary: "Inter",sans-serif;
     --font-secondary: "Cardo", serif;
+}
+
+.container h1{
+    text-align: center;
 }
 
 .panel-header {
@@ -90,7 +96,7 @@
     width: 17%;
     background-color: #DDDDDD;
     position: absolute;
-    top: 182px;
+    top: 300px;
 }
 
 .active::after{
