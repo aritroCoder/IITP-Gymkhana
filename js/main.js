@@ -373,6 +373,10 @@ $("#tile-1 .nav-tabs a").click(function() {
   var position = $(this).position();
   var width = $(this).parent().width();
     $("#tile-1 .slider").css({"left":+ position.left,"width":width});
+  var tablinks = document.getElementsByClassName("nav-link");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
 });
 var actWidth = $("#tile-1 .nav-tabs").find(".active").parent("li").width();
 var actPosition = $("#tile-1 .nav-tabs .active").position();
