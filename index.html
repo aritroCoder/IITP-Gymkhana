@@ -1865,61 +1865,22 @@
               border: "none",
             });
           }
-          var currentPageUrl = window.location.href;
-  
-      // Get all the navigation menu links
-      var navLinks = document.querySelectorAll('.nav-menu ul li a');
-  
-      // Loop through each navigation link
-      for (var i = 0; i < navLinks.length; i++) {
-        var link = navLinks[i];
-        
-        // Check if the link's href matches the current page URL
-        if (link.href === currentPageUrl) {
-          // Add the 'active' class to the parent li element
-          link.parentNode.classList.add('active');
-          break; // Exit the loop if a match is found
-        }
-        else{
-          if(link.parentNode.classList.contains('active')){
-            link.parentNode.classList.remove('active');
-          }
-        }
-  }
         });
-        var currentPageUrl = window.location.href;
-  
-  // Get all the navigation menu links
-  var navLinks = document.querySelectorAll('.nav-menu ul li a');
-
-  // Loop through each navigation link
-  for (var i = 0; i < navLinks.length; i++) {
-    var link = navLinks[i];
-    
-    // Check if the link's href matches the current page URL
-    if (link.href === currentPageUrl) {
-      // Add the 'active' class to the parent li element
-      link.parentNode.classList.add('active');
-      break; // Exit the loop if a match is found
-    }
-}
       };
       openTab();
-      // Get the current page URL
-    
-
     </script>
 
-  <!--====== Javascripts & Jquery ======-->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.owl-filter.js"></script>
-  <script src="js/magnific-popup.min.js"></script>
-  <script src="js/circle-progress.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="fest-carousel/carousel.js"></script>
-  <script src="socities-carousel/carousel.js"></script>
-</body>
-
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.owl-filter.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="fest-carousel/carousel.js"></script>
+    <script src="socities-carousel/carousel.js"></script>
+  </body>
 </html>
