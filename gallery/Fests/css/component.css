@@ -65,6 +65,16 @@
 	padding: 16px;
 }
 
+@media screen and (max-width: 450px){
+	.photostack-img {
+		padding: 0;
+	}
+	.js .photostack figure {
+		width: 276px;
+    	/* left: 38px; */
+	}
+}
+
 .photostack-back {
 	display: none;
 	position: absolute;
