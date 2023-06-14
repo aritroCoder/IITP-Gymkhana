@@ -8,6 +8,7 @@ The official website of Student's gymkhana, IIT Patna
 
 - [@aritroCoder](https://www.github.com/aritroCoder)
 - [@Anurag-Deo](https://www.github.com/Anurag-Deo)
+- [@rdev12](https://github.com/rdev12)
 
 ## Contributors
 
