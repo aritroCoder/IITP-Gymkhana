@@ -18,6 +18,8 @@ body {
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Lato', Arial, sans-serif;
+	height: 600px;
+    overflow: hidden;
 }
 
 .clearfix:before,
