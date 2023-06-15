@@ -94,7 +94,7 @@
 .card-image{
   position: relative;
   height: 170px;
-  width: 170px;
+  max-width: 170px;
   border-radius: 10px;
   background: #FFF;
   padding: 3px;
