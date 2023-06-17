@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open Sans");
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
 
 * {
     margin: 0;
@@ -10,131 +10,76 @@
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
 }
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #ffffff;
 }
-
 #navbar .iitplogo {
+<<<<<<< HEAD
     margin-right: 5px;
+=======
+    width: 7%;
+    margin: 10px 10px;
+    align-items: center;
+    justify-content: center;
+
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
 }
 
-#navbar .iitplogo a img {
-    width: 50px;
+
+#navbar .iitplogo img {
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
+<<<<<<< HEAD
 #navbar .header span {
     font-family: "Avenir-Demi";
+=======
+/* List styling */
+
+
+
+
+.header {
+    width: 30%;
+    margin: 0px 0px;
+}
+
+.header span {
+    font-family: 'Avenir-Demi';
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
     display: inline-block;
     width: auto;
     height: auto;
     color: #f5f4f0;
     line-height: 25px;
+<<<<<<< HEAD
     /* padding-right: 60px; */
+=======
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
 }
 
-#navbar .header .heading_english {
+.header .heading_english {
     font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 8px;
+    font-size: 20px;
 }
 
-#navbar .header .heading_hindi {
+.header .heading_hindi {
     color: rgb(158, 234, 255);
-    font-size: 18px;
+    font-size: 15px;
 }
-
-#navbar .header-container {
-    display: flex;
-    width: 40%;
-}
-
-#navbar .header-container .iitplogo {
-    width: 20%;
-    margin: 10px 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-#navbar .iitplogo img {
-    width: 100px;
-}
-
-
-.list-container .nav-list li a {
-    display: block;
-    color: #f5f4f0;
-    padding: 1px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.list-container .nav-list li a:hover {
-    color: #f5f4f0;
-}
-
-/* Dropdown button */
-
-/* .dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: inherit;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0 0 0 0;
-    background-color: #0261a8;
-    font-family: inherit;
-
-    margin: 0;
-    display: block;
-    color: #f5f4f0;
-    padding: 1px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #0261a8;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    padding-top: 20px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: grid;
-    grid-row-gap: 20px;
-} */
-
-
 
 /* Navrbar ends */
 
 #home {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    padding: 10px 0px;
+    /* height: 400px; */
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
     text-align: left;
 }
 
@@ -143,14 +88,15 @@
 #intro {
     margin: 16px 40px;
     padding: 3px;
+
 }
 
 .main_cover {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
     width: 100%;
-    background-image: url("main_cover_bg.jpg");
+    background-image: url('main_cover_bg.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -166,7 +112,7 @@
     line-height: 1.5em;
     padding-bottom: 15px;
     position: relative;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 100px;
     width: 50%;
 }
@@ -181,6 +127,15 @@
     background-color: white;
 }
 
+@media (max-width: 800px) {
+    .main_cover{
+        align-items: center
+    }
+    .para-container{
+        display: block;
+    }
+
+}
 .main_cover h1:after {
     content: "";
     position: absolute;
@@ -190,6 +145,7 @@
     width: 95%;
     max-width: 255px;
     background-color: white;
+
 }
 
 #intro h2 {
@@ -207,7 +163,7 @@
 #intro h2:before {
     background-color: #c50000;
     border-radius: 0.25rem;
-    content: "";
+    content: '';
     display: block;
     height: 0.25rem;
     width: 100%;
@@ -220,14 +176,14 @@
 }
 
 .intro-container .para-container {
-    width: 70%;
     padding-left: 15px;
     line-height: 29px;
+    margin-right: 20px;
 }
 
 .intro-container .para-container h3 {
     font-size: 18pt;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #ff5e0e;
     background-color: transparent;
     font-style: normal;
@@ -235,11 +191,12 @@
     text-decoration: none;
     vertical-align: baseline;
     padding-bottom: 20px;
+
 }
 
 .intro-container .para-container p {
     font-size: 15pt;
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     color: #38761d;
     background-color: transparent;
     padding-bottom: 40px;
@@ -252,7 +209,7 @@
 .text1 {
     color: #ef2020;
     font-size: 14pt;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: transparent;
     font-weight: bold;
     vertical-align: baseline;
@@ -261,7 +218,7 @@
 .text2 {
     color: #ef2020;
     font-size: 13pt;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: transparent;
     font-weight: bold;
     vertical-align: baseline;
@@ -272,9 +229,9 @@
     cursor: pointer;
     padding: 6px 10px;
     border: #f5f4f0;
-    color: #f5f4f0;
     border-radius: 100px;
     font-size: 0.9rem;
+
 }
 
 .ytblink a {
@@ -286,22 +243,20 @@
     cursor: pointer;
     margin: 0px 0px;
     padding: 6px 9px;
-    border: 1px solid #f5f4f0;
+    border: 1px solid white;
     background-color: green;
     opacity: 0.9;
-    color: #f5f4f0;
+    color: white;
     border-radius: 100px;
     font-size: 0.9rem;
 }
 
-.img-container {
-    justify-content: right;
-}
 
 .img-container img {
-    padding-left: 90px;
-    height: 370px;
-    width: 380px;
+    margin: 20px 20px 20px 20px;
+    max-height: 370px;
+    max-width: 380px;
+    width: 100%;
 }
 
 /* Footer area */
@@ -320,11 +275,19 @@
 .footer-area .footer-center {
     display: flex;
     vertical-align: top;
+}
+
+.footer-area .footer-center {
     width: 100%;
     padding: 20px;
     padding-right: 40px;
 }
 
+.footer-area .footer-right {
+    justify-content: end;
+    align-items: end;
+    display: block;
+}
 
 .footer-area .footer-center p {
     display: inline-block;
@@ -332,13 +295,14 @@
     vertical-align: middle;
     margin: 0;
     padding-bottom: 10px;
-    font-family: "Avenir-Demi";
+    font-family: 'Avenir-Demi';
     padding-right: 40px;
     font-weight: 500;
     font-size: 2rem;
 }
 
 .footer-area .footer-center ul {
+
     list-style-type: none;
     padding-right: 90px;
     line-height: 20px;
@@ -357,15 +321,14 @@
 }
 
 .footer-area .footer-center a {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     color: #e0ac1c;
     text-decoration: none;
 }
 
 .footer-area .footer-right {
-    justify-content: end;
-    align-items: end;
-    display: block;
+    /* justify-content: end; */
+    align-items: right;
     align-content: right;
 }
 
@@ -420,6 +383,7 @@
     color: #f5f4f0;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 901px){
     .navbar-collapse{
         justify-content: flex-end !important;
@@ -487,11 +451,41 @@
         /* height: 500px; */
         width: 100%;
         padding: 3px 0px;
+=======
+
+/* Mob view */
+
+
+@media screen and (max-width: 380px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+
+    #home {
+        height: 370px;
+        padding: 3px 28px;
+    }
+
+    #home::before {
+        height: 480px;
+    }
+
+    #home p {
+        font-size: 13px;
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
     }
 
     .main_cover {
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
         width: 100%;
     }
 
@@ -582,6 +576,21 @@
 
     .footer-area .footer-right .footer-company-about span {
         font-size: 1.7rem;
+=======
+        height: 50%;
+        width: 100%;
+        background-image: url('main_cover_bg.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .main_cover h1 {
+        font-size: 30px;
+
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
     }
 }
 
