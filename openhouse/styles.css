@@ -1,44 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open Sans');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
 }
 
-/*navigation bar styling*/
 
-#navbar {
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffff;
+}
+
+#navbar .iitplogo {
+    margin-right: 5px;
+}
+
+#navbar .iitplogo a img {
+    width: 50px;
+}
+
+#navbar .header span {
+    font-family: "Avenir-Demi";
+    display: inline-block;
+    width: auto;
+    height: auto;
+    color: #f5f4f0;
+    line-height: 25px;
+    /* padding-right: 60px; */
+}
+
+#navbar .header .heading_english {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+#navbar .header .heading_hindi {
+    color: rgb(158, 234, 255);
+    font-size: 18px;
+}
+
+#navbar .header-container {
     display: flex;
+    width: 40%;
+}
+
+#navbar .header-container .iitplogo {
+    width: 20%;
+    margin: 10px 10px;
     align-items: center;
-    position: relative;
-    top: 0px;
-    font-family: Popins;
+    justify-content: center;
 }
 
-.item a, .item button {
-    font-family: Poppins;
+#navbar .iitplogo img {
+    width: 100px;
 }
 
-#navbar::before {
-    content: "";
-    background-color: #0261a8;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
+
+.list-container .nav-list li a {
+    display: block;
+    color: #f5f4f0;
+    padding: 1px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.dropdown {
+.list-container .nav-list li a:hover {
+    color: #f5f4f0;
+}
+
+/* Dropdown button */
+
+/* .dropdown {
     float: left;
     overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
     font-size: inherit;
     border: none;
@@ -46,8 +91,8 @@
     color: white;
     padding: 0 0 0 0;
     background-color: #0261a8;
-    font-family: Popins;
-    /* Important for vertical align on mobile phones */
+    font-family: inherit;
+
     margin: 0;
     display: block;
     color: #f5f4f0;
@@ -60,7 +105,6 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f9f9f9; */
     min-width: 160px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -79,91 +123,18 @@
     text-align: left;
 }
 
-
 .dropdown:hover .dropdown-content {
     display: grid;
     grid-row-gap: 20px;
-}
-
-#iitplogo {
-    margin: 10px 35px;
-}
-
-.main_cover {
-    display: flex;
-    flex-direction: column;
-    height: 750px;
-    width: 100%;
-    background-image: url('main_cover_bg.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-#iitplogo img {
-    height: 60px;
-}
-
-#header {
-    margin: 10px 0px;
-    padding-right: 39px;
-}
-
-#header span {
-    font-family: 'Avenir-Demi';
-    display: inline-block;
-    width: auto;
-    height: auto;
-    color: #f5f4f0;
-    line-height: 25px;
-}
-
-#header .heading_english {
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Poppins;
-}
-
-#header .heading_hindi {
-    color: rgb(158, 234, 255);
-    font-size: 15px;
-    font-family: Poppins;
-}
+} */
 
 
-/*list styling*/
 
-#navbar ul {
-    display: flex;
-    font-family: 'Avenir-Demi';
-}
-
-#navbar ul li {
-    list-style-type: none;
-    font-size: 0.93rem;
-}
-
-#navbar ul li a {
-    display: block;
-    color: #f5f4f0;
-    padding: 1px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#navbar ul li a:hover {
-    color: black;
-}
-
+/* Navrbar ends */
 
 #home {
     display: flex;
     flex-direction: column;
-    padding: 3px 40px;
-    height: 400px;
     text-align: left;
 }
 
@@ -174,22 +145,24 @@
     padding: 3px;
 }
 
-#intro h1 {
-    font-size: 1.8rem;
-    color: #695d46;
-    background-color: transparent;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    vertical-align: baseline;
-    padding-bottom: 30px;
+.main_cover {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-image: url("main_cover_bg.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .main_cover h1 {
-    font-size: 5rem;
+    font-size: 6vw;
     font-weight: 500;
     color: #f5f4f0;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     line-height: 1.5em;
     padding-bottom: 15px;
     position: relative;
@@ -219,9 +192,7 @@
     background-color: white;
 }
 
-
 #intro h2 {
-    font-size: 34px;
     font-weight: 500;
     text-transform: uppercase;
     color: #276490;
@@ -236,18 +207,27 @@
 #intro h2:before {
     background-color: #c50000;
     border-radius: 0.25rem;
-    content: '';
+    content: "";
     display: block;
     height: 0.25rem;
     width: 100%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.3rem;
 }
 
+.intro-container {
+    display: flex;
+    /* height: 750px; */
+}
 
+.intro-container .para-container {
+    width: 70%;
+    padding-left: 15px;
+    line-height: 29px;
+}
 
-#intro h3 {
+.intro-container .para-container h3 {
     font-size: 18pt;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
     color: #ff5e0e;
     background-color: transparent;
     font-style: normal;
@@ -257,34 +237,22 @@
     padding-bottom: 20px;
 }
 
-#intro p {
+.intro-container .para-container p {
     font-size: 15pt;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
     color: #38761d;
     background-color: transparent;
     padding-bottom: 40px;
 }
 
-.intro-container {
-    display: flex;
-}
-
-.intro-container .para-container {
-    width: 60%;
-    padding-left: 15px;
-    line-height: 29px;
-}
-
-.img-container img {
-    padding-left: 90px;
-    height: 370px;
-    width: 380px;
+.links-container {
+    line-height: 40px;
 }
 
 .text1 {
     color: #ef2020;
     font-size: 14pt;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: transparent;
     font-weight: bold;
     vertical-align: baseline;
@@ -293,35 +261,47 @@
 .text2 {
     color: #ef2020;
     font-size: 13pt;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: transparent;
     font-weight: bold;
     vertical-align: baseline;
 }
 
-.link a {
-    color: black;
-}
-
-.link button {
+.ytblink {
     margin-left: 30px;
     cursor: pointer;
     padding: 6px 10px;
     border: #f5f4f0;
+    color: #f5f4f0;
     border-radius: 100px;
     font-size: 0.9rem;
-
 }
 
-.link button :hover {
+.ytblink a {
+    color: black;
+    text-decoration: none;
+}
+
+.ytblink :hover {
     cursor: pointer;
-    padding: 6px 10px;
-    border: 1px solid white;
+    margin: 0px 0px;
+    padding: 6px 9px;
+    border: 1px solid #f5f4f0;
     background-color: green;
     opacity: 0.9;
-    color: white;
+    color: #f5f4f0;
     border-radius: 100px;
     font-size: 0.9rem;
+}
+
+.img-container {
+    justify-content: right;
+}
+
+.img-container img {
+    padding-left: 90px;
+    height: 370px;
+    width: 380px;
 }
 
 /* Footer area */
@@ -334,25 +314,17 @@
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 0px 50px;
-    margin-top: 200px;
+    margin-top: 60px;
 }
 
 .footer-area .footer-center {
     display: flex;
     vertical-align: top;
-}
-
-.footer-area .footer-center {
     width: 100%;
     padding: 20px;
     padding-right: 40px;
 }
 
-.footer-area .footer-right {
-    justify-content: end;
-    align-items: end;
-    display: block;
-}
 
 .footer-area .footer-center p {
     display: inline-block;
@@ -360,14 +332,13 @@
     vertical-align: middle;
     margin: 0;
     padding-bottom: 10px;
-    font-family: 'Avenir-Demi';
+    font-family: "Avenir-Demi";
     padding-right: 40px;
     font-weight: 500;
     font-size: 2rem;
 }
 
 .footer-area .footer-center ul {
-
     list-style-type: none;
     padding-right: 90px;
     line-height: 20px;
@@ -386,14 +357,15 @@
 }
 
 .footer-area .footer-center a {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     color: #e0ac1c;
     text-decoration: none;
 }
 
 .footer-area .footer-right {
-    /* justify-content: end; */
-    align-items: right;
+    justify-content: end;
+    align-items: end;
+    display: block;
     align-content: right;
 }
 
@@ -448,26 +420,226 @@
     color: #f5f4f0;
 }
 
-
-
-@media screen and (max-width: 380px) {
-    #navbar {
-        flex-direction: column;
+@media only screen and (min-width: 901px){
+    .navbar-collapse{
+        justify-content: flex-end !important;
+        gap: 10px;
     }
+}
 
+/* Mob view */
+@media only screen and (max-width: 900px) {
+    #navbar {
+        flex-direction: row;
+        width: 100%;
+    }
+    .para-container{
+        width: 100% !important;
+        padding-left: 0px !important;
+    }
     #navbar ul li a {
-        font-size: 1rem;
-        padding: 0px 7px;
+        font-size: 0.7rem;
+        padding: 0px 7Opx;
         padding-bottom: 8px;
     }
 
-    #home {
-        height: 370px;
-        padding: 3px 28px;
+    .header-container {
+        display: flex;
+        height: 70%;
     }
 
-    #home::before {
-        height: 480px;
+    #navbar .header-container .iitplogo {
+        width: 40%;
+        margin: 30px 20px;
+        text-align: left;
+        justify-content: left;
+    }
+
+    #navbar .header-container .iitplogo img {
+        width: 60%;
+        padding-right: 10px;
+
+    }
+
+    .header-container .header {
+        display: flex;
+    }
+
+    .header-container .header .heading_english {
+        font-size: 1rem;
+        padding-bottom: 3px;
+    }
+
+    .header-container .header .heading_hindi {
+        font-size: 0.9rem;
+    }
+
+
+    .list-container {
+        height: 30%;
+    }
+
+    .list-container .nav-list {
+        justify-content: left;
+    }
+
+    #home {
+        /* height: 500px; */
+        width: 100%;
+        padding: 3px 0px;
+    }
+
+    .main_cover {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_cover h1 {
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    #intro .intro-container .para-container p {
+        font-size: 14px;
+    }
+
+    .main_cover {
+        height: 500px;
+        width: 100%;
+    }
+
+    .intro-container img {
+        display: block;
+    }
+
+    #intro h2 {
+        font-size: 2.2rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .intro-container {
+        display: block;
+    }
+
+
+    #intro p {
+        font-size: 14px;
+    }
+
+    .text1 {
+        font-size: 14px;
+    }
+
+    .text2 {
+        font-size: 14px;
+    }
+
+    .img-container {
+        justify-content: left;
+    }
+
+    .img-container img {
+        padding-top: 30px;
+        padding-left: 0px;
+        height: auto;
+        width: 60%;
+    }
+
+    .footer-area {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font: bold 14px sans-serif;
+        padding: 20px 0px 0px 20px;
+        margin-top: 50px;
+    }
+
+    .footer-area .footer-center {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    .footer-area .footer-center p {
+        margin: 0;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: Poppins;
+    }
+
+    .footer-area .footer-center ul li {
+        font-size: 0.7rem;
+    }
+
+    .text-white {
+        font-size: 1rem;
+    }
+
+    .footer-area .footer-right .footer-company-about span {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        font-size: 0.7rem;
+        padding: 0px 7Opx;
+        padding-bottom: 8px;
+    }
+
+    .header-container {
+        display: flex;
+    }
+
+    #navbar .header-container .iitplogo {
+        width: 40%;
+        margin: 0px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar .header-container .iitplogo img {
+        width: 60%;
+        padding-right: 10px;
+    }
+
+    .header {
+        width: 70%;
+        text-align: center;
+        /* margin: 10px 0px; */
+    }
+
+    .list-container .nav-list {
+        justify-content: left;
+    }
+
+    #home {
+        /* height: 500px; */
+        width: 100%;
+        padding: 3px 0px;
+    }
+
+    .main_cover {
+        display: flex;
+        flex-direction: column;
+        /* height: 700px; */
+        width: 100%;
+    }
+
+    .main_cover h1 {
+        margin-top: 280px;
+        margin-left: 40px;
+
     }
 
     #home p {
@@ -475,20 +647,89 @@
     }
 
     .main_cover {
-        display: flex;
-        flex-direction: column;
-        height: 350px;
+        height: 500px;
         width: 100%;
-        background-image: url('main_cover_bg.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
     }
 
     .main_cover h1 {
-        font-size: 30px;
+        font-size: 20px;
+    }
 
+    .intro-container img {
+        display: block;
+    }
+
+    #intro h2 {
+        font-size: 2.2rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .intro-container {
+        display: block;
+    }
+
+    #intro h3 {
+        font-size: 24px;
+    }
+
+    #intro p {
+        font-size: 14px;
+    }
+
+    .text1 {
+        font-size: 13px;
+    }
+
+    .text2 {
+        font-size: 14px;
+    }
+
+    .img-container {
+        justify-content: left;
+    }
+
+    .img-container img {
+        padding-top: 20px;
+        padding-left: 0px;
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-area {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font: bold 14px sans-serif;
+        padding: 20px 0px 0px 20px;
+        margin-top: 60px;
+    }
+
+    .footer-area .footer-center {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    .footer-area .footer-center p {
+        margin: 0;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: Poppins;
+    }
+
+    .footer-area .footer-center ul li {
+        font-size: 0.7rem;
+    }
+
+    .text-white {
+        font-size: 1rem;
+    }
+
+    .footer-area .footer-right .footer-company-about span {
+        font-size: 1.7rem;
     }
 }
