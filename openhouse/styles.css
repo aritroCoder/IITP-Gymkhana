@@ -19,7 +19,7 @@
 }
 
 #navbar .iitplogo {
-    margin-right: 5px;
+    margin-right: 29px;
 }
 
 #navbar .iitplogo a img {
@@ -39,7 +39,7 @@
 #navbar .header .heading_english {
     font-weight: bold;
     font-size: 24px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 
 #navbar .header .heading_hindi {
@@ -62,7 +62,6 @@
 #navbar .iitplogo img {
     width: 100px;
 }
-
 
 .list-container .nav-list li a {
     display: block;
@@ -235,6 +234,7 @@
     text-decoration: none;
     vertical-align: baseline;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .intro-container .para-container p {
@@ -270,22 +270,23 @@
 .ytblink {
     margin-left: 30px;
     cursor: pointer;
-    padding: 6px 10px;
+    padding: 0px 0px;
     border: #f5f4f0;
     color: #f5f4f0;
-    border-radius: 100px;
+    border-radius: 30px;
     font-size: 0.9rem;
 }
 
 .ytblink a {
     color: black;
+    padding: 0px 5px;
     text-decoration: none;
 }
 
 .ytblink :hover {
     cursor: pointer;
     margin: 0px 0px;
-    padding: 6px 9px;
+    padding: 7px 10px;
     border: 1px solid #f5f4f0;
     background-color: green;
     opacity: 0.9;
@@ -299,8 +300,8 @@
 }
 
 .img-container img {
-    padding-left: 90px;
-    height: 370px;
+    padding-left: 60px;
+    height: 350px;
     width: 380px;
 }
 
@@ -420,8 +421,8 @@
     color: #f5f4f0;
 }
 
-@media only screen and (min-width: 901px){
-    .navbar-collapse{
+@media only screen and (min-width: 901px) {
+    .navbar-collapse {
         justify-content: flex-end !important;
         gap: 10px;
     }
@@ -433,10 +434,12 @@
         flex-direction: row;
         width: 100%;
     }
-    .para-container{
+
+    .para-container {
         width: 100% !important;
         padding-left: 0px !important;
     }
+
     #navbar ul li a {
         font-size: 0.7rem;
         padding: 0px 7Opx;
@@ -608,13 +611,21 @@
         justify-content: center;
     }
 
+    #navbar .header {
+        text-align: left;
+    }
+
+    #navbar .header .heading_english {
+        font-size: 1.3rem;
+    }
+
     #navbar .header-container .iitplogo img {
         width: 60%;
-        padding-right: 10px;
+        padding-right: 0px;
     }
 
     .header {
-        width: 70%;
+        width: 60%;
         text-align: center;
         /* margin: 10px 0px; */
     }
