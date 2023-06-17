@@ -383,6 +383,7 @@
     color: #f5f4f0;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 901px){
     .navbar-collapse{
         justify-content: flex-end !important;
@@ -450,6 +451,35 @@
         /* height: 500px; */
         width: 100%;
         padding: 3px 0px;
+=======
+
+/* Mob view */
+
+
+@media screen and (max-width: 380px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+
+    #home {
+        height: 370px;
+        padding: 3px 28px;
+    }
+
+    #home::before {
+        height: 480px;
+    }
+
+    #home p {
+        font-size: 13px;
+>>>>>>> e8b03685a63c69b0a6951d1afa4eea7712add1e3
     }
 
     .main_cover {
