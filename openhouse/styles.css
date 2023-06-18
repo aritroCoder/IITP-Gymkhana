@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+nav {
+    transition: 0.5s;
+}
+
+.nav-link {
+    transition: 0.5s;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
@@ -34,6 +41,10 @@
     color: #f5f4f0;
     line-height: 25px;
     /* padding-right: 60px; */
+}
+
+.nav-item-active {
+    transition: 0.5s;
 }
 
 #navbar .header .heading_english {
@@ -76,65 +87,13 @@
     color: #f5f4f0;
 }
 
-/* Dropdown button */
-
-/* .dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: inherit;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0 0 0 0;
-    background-color: #0261a8;
-    font-family: inherit;
-
-    margin: 0;
-    display: block;
-    color: #f5f4f0;
-    padding: 1px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #0261a8;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    padding-top: 20px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: grid;
-    grid-row-gap: 20px;
-} */
-
-
-
 /* Navrbar ends */
 
 #home {
     display: flex;
     flex-direction: column;
     text-align: left;
+    transition: 0.5s;
 }
 
 /* Introduction part */
@@ -142,6 +101,7 @@
 #intro {
     margin: 16px 40px;
     padding: 3px;
+    transition: 0.5s;
 }
 
 .main_cover {
@@ -155,10 +115,12 @@
     background-repeat: no-repeat;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    transition: 0.5s;
 }
 
 .main_cover h1 {
     font-size: 6vw;
+    font-family: "roboto";
     font-weight: 500;
     color: #f5f4f0;
     letter-spacing: 1px;
@@ -191,16 +153,17 @@
     background-color: white;
 }
 
+
 #intro h2 {
     font-weight: 500;
     text-transform: uppercase;
-    color: #276490;
-    font-size: 2.5rem;
-    font-weight: 500;
+    color: #1c1c1c;
+    font-weight: 700;
     text-align: center;
     margin-top: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "roboto";
     margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 #intro h2:before {
@@ -215,7 +178,6 @@
 
 .intro-container {
     display: flex;
-    /* height: 750px; */
 }
 
 .intro-container .para-container {
@@ -225,74 +187,113 @@
 }
 
 .intro-container .para-container h3 {
-    font-size: 18pt;
-    font-family: "PT Sans Narrow", sans-serif;
-    color: #ff5e0e;
+    font-size: 1.8rem;
+    font-family: "roboto";
+    color: #1c1c1c;
     background-color: transparent;
     font-style: normal;
     font-variant: normal;
     text-decoration: none;
     vertical-align: baseline;
     padding-bottom: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .intro-container .para-container p {
-    font-size: 15pt;
-    font-family: "PT Sans Narrow", sans-serif;
-    color: #38761d;
+    font-size: 1.2rem;
+    font-family: "roboto";
+    color: #1c1c1c;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
     background-color: transparent;
     padding-bottom: 40px;
 }
 
 .links-container {
     line-height: 40px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .text1 {
-    color: #ef2020;
-    font-size: 14pt;
-    font-family: "Open Sans", sans-serif;
+    color: #1c1c1c;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 25px;
+    font-family: "roboto";
+    text-decoration: none;
     background-color: transparent;
-    font-weight: bold;
+    font-weight: 500;
     vertical-align: baseline;
+    line-height: 21px;
 }
 
 .text2 {
-    color: #ef2020;
-    font-size: 13pt;
-    font-family: "Open Sans", sans-serif;
+    color: #1c1c1c;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 25px;
+    text-decoration: none;
+    font-family: "roboto";
     background-color: transparent;
-    font-weight: bold;
+    font-weight: 500;
     vertical-align: baseline;
+    line-height: 21px;
 }
 
-.ytblink {
-    margin-left: 30px;
+/* .ytblink {
+    /*
+     width: 80px;
+
+    height: 30px;
     cursor: pointer;
     padding: 0px 0px;
     border: #f5f4f0;
-    color: #f5f4f0;
-    border-radius: 30px;
-    font-size: 0.9rem;
-}
+    border-radius: 100px;
+     */
+/* margin-left: 30px; */
+/* font-size: 0.8rem;
 
-.ytblink a {
-    color: black;
-    padding: 0px 5px;
+    background-color: white;
+    color: blue;
+    border: 1px solid black;
+    height: 33px;
+    width: 80px;
+    border-radius: 4px;
+    cursor: pointer;
+
+} */
+
+/* .ytblink a {
+    color: #1c1c1c;
+    padding: 0px 0px;
+    text-decoration: none;
+} */
+
+.ybtlinku {
+    margin-bottom: 8px;
+    font-size: 0.87rem;
+    background-color: white;
+    color: rgb(12, 51, 123);
+    padding: 3px;
+    padding-bottom: 4px;
+    text-align: center;
+    border: 1px solid black;
+    height: 26px;
+    width: 80px;
+    border-radius: 4px;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.ytblink :hover {
-    cursor: pointer;
-    margin: 0px 0px;
-    padding: 7px 10px;
-    border: 1px solid #f5f4f0;
-    background-color: green;
-    opacity: 0.9;
-    color: #f5f4f0;
-    border-radius: 100px;
-    font-size: 0.9rem;
+.ybtlink {
+    text-decoration: none;
+}
+
+.links-container a .ybtlinku:hover {
+    background-color: rgb(9, 133, 142);
+    color: rgb(251, 251, 251);
 }
 
 .img-container {
@@ -309,7 +310,7 @@
 
 .footer-area {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: #0261a8;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -322,7 +323,7 @@
     display: flex;
     vertical-align: top;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     padding-right: 40px;
 }
 
@@ -333,7 +334,7 @@
     vertical-align: middle;
     margin: 0;
     padding-bottom: 10px;
-    font-family: "Avenir-Demi";
+    font-family: "roboto";
     padding-right: 40px;
     font-weight: 500;
     font-size: 2rem;
@@ -349,7 +350,7 @@
     list-style-type: none;
     padding: 3px 0px;
     font-size: 0.83rem;
-    margin-left: 0px;
+    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -358,8 +359,10 @@
 }
 
 .footer-area .footer-center a {
-    font-family: "Open Sans";
-    color: #e0ac1c;
+    font-family: "roboto";
+    font-size: 0.8rem;
+    /* color: rgb(158, 234, 255); */
+    color: #b3b9c0;
     text-decoration: none;
 }
 
@@ -391,7 +394,7 @@
     display: block;
     color: #ffffff;
     font-size: 1.7rem;
-    font-family: Poppins;
+    font-family: "roboto";
     font-weight: bold;
     margin-bottom: 20px;
     align-self: right;
