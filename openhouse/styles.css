@@ -306,6 +306,47 @@ nav {
     width: 380px;
 }
 
+
+.openhouse-report {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+}
+
+.openhouse-report:hover {
+    text-decoration: none;
+}
+
+.openhouse-report a {
+    display: flex;
+    cursor: pointer;
+}
+
+.openhouse-report .pdf-link p {
+    font-family: "roboto";
+    padding: 10px;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#ppt-container {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 /* Footer area */
 
 .footer-area {
@@ -429,6 +470,11 @@ nav {
         justify-content: flex-end !important;
         gap: 10px;
     }
+
+    .openhouse-report p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
 }
 
 /* Mob view */
@@ -441,6 +487,23 @@ nav {
     .para-container {
         width: 100% !important;
         padding-left: 0px !important;
+    }
+
+    .openhouse-report a {
+        font-size: 80px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .openhouse-report .pdf-link p {
+        padding-top: 10px;
+        font-size: 8px;
+    }
+
+    #ppt-container iframe {
+        width: 100%;
+        text-align: left;
+        height: 350px;
     }
 
     #navbar ul li a {
@@ -746,4 +809,44 @@ nav {
     .footer-area .footer-right .footer-company-about span {
         font-size: 1.7rem;
     }
+
+    .openhouse-report a {
+        font-size: 80px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .openhouse-report .pdf-link p {
+        padding-top: 10px;
+        font-size: 8px;
+    }
+
+    #ppt-container iframe {
+        width: 100%;
+        text-align: left;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+    .openhouse-report a {
+        font-size: 80px;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .openhouse-report .pdf-link p {
+        padding-top: 7px;
+        padding-left: 20px;
+        font-size: 8px;
+    }
+
+    #ppt-container iframe {
+        width: 100%;
+        text-align: left;
+        height: 260px;
+    }
+
 }
